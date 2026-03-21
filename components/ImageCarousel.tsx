@@ -12,7 +12,7 @@ type Slide = {
 };
 
 type ImageCarouselProps = {
-  slides: Slide[];
+  slides: readonly Slide[];
   intervalMs?: number;
   aspectClassName?: string;
   sizes?: string;

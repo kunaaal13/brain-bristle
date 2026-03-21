@@ -7,7 +7,7 @@ type StripItem = {
 };
 
 type ImageStripProps = {
-  items: StripItem[];
+  items: readonly StripItem[];
 };
 
 export default function ImageStrip({ items }: ImageStripProps) {
