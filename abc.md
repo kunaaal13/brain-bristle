@@ -1,0 +1,2 @@
+Monsterrat - Headings
+Geist - text
