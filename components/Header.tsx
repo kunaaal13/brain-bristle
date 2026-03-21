@@ -1,45 +1,36 @@
 "use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
-import { navigation } from '../content/data';
+import { useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { AnimatePresence, motion } from "framer-motion";
+import { Menu, X } from "lucide-react";
+import { navigation } from "../content/data";
+import BrandMark from "./BrandMark";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
-
-  // Close mobile menu when route changes
   const handleLinkClick = () => setIsMobileMenuOpen(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-navy/10 bg-off-white/90 backdrop-blur-md">
-      <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-        <Link 
-          href="/" 
-          className="text-2xl font-bold font-heading text-navy tracking-tight z-50 relative flex items-center gap-2"
-          onClick={handleLinkClick}
-        >
-          <div className="w-6 h-6 rounded-full bg-yellow flex items-center justify-center">
-            <div className="w-2 h-2 rounded-full bg-navy"></div>
-          </div>
-          BRAIN BRISTLE
-        </Link>
+    <header className="sticky top-0 z-50 border-b border-[color:var(--color-border)] bg-[rgba(251,248,243,0.82)] backdrop-blur-xl">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 sm:px-8 lg:px-12">
+        <div onClick={handleLinkClick}>
+          <BrandMark compact />
+        </div>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden lg:flex gap-8 items-center">
+        <nav className="hidden items-center gap-2 lg:flex">
           {navigation.map((item) => {
             const isActive = pathname === item.href;
-            const isDonate = item.name === 'Donate';
-            
+            const isDonate = item.name === "Donate";
+
             if (isDonate) {
               return (
-                <Link 
-                  key={item.name} 
+                <Link
+                  key={item.name}
                   href={item.href}
-                  className="px-6 py-2.5 bg-yellow text-navy font-semibold rounded-full hover:bg-yellow/90 transition-colors shadow-sm"
+                  className="ml-2 inline-flex items-center rounded-full bg-[var(--color-ink)] px-5 py-3 text-sm font-semibold text-white transition duration-200 hover:bg-[var(--color-accent)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-4 focus-visible:ring-offset-[var(--color-surface)]"
                 >
                   {item.name}
                 </Link>
@@ -47,25 +38,23 @@ export default function Header() {
             }
 
             return (
-              <Link 
-                key={item.name} 
+              <Link
+                key={item.name}
                 href={item.href}
-                className={`text-sm font-semibold uppercase tracking-wide transition-colors relative group py-2 ${
-                  isActive ? 'text-grey-turquoise' : 'text-navy hover:text-grey-turquoise'
+                className={`rounded-full px-4 py-2.5 text-sm font-medium transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-4 focus-visible:ring-offset-[var(--color-surface)] ${
+                  isActive
+                    ? "bg-[rgba(216,226,219,0.72)] text-[var(--color-ink)]"
+                    : "text-[var(--color-muted)] hover:bg-white/70 hover:text-[var(--color-ink)]"
                 }`}
               >
                 {item.name}
-                <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-grey-turquoise transform origin-left transition-transform duration-300 ${
-                  isActive ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
-                }`} />
               </Link>
             );
           })}
         </nav>
 
-        {/* Mobile Menu Toggle */}
-        <button 
-          className="lg:hidden text-navy p-2 z-50 relative focus:outline-none"
+        <button
+          className="relative z-50 rounded-full border border-[color:var(--color-border)] bg-white/80 p-3 text-[var(--color-ink)] lg:hidden"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -73,20 +62,19 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Mobile Navigation */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, x: "100%" }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: "100%" }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="fixed inset-0 top-20 bg-navy z-40 lg:hidden overflow-y-auto border-t-4 border-yellow"
+            initial={{ opacity: 0, y: -16 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -16 }}
+            transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
+            className="border-t border-[color:var(--color-border)] bg-[rgba(251,248,243,0.97)] lg:hidden"
           >
-            <div className="flex flex-col px-8 py-12 gap-8 h-full min-h-[calc(100vh-5rem)] pb-24">
+            <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-6 sm:px-8">
               {navigation.map((item, i) => {
                 const isActive = pathname === item.href;
-                const isDonate = item.name === 'Donate';
+                const isDonate = item.name === "Donate";
                 
                 return (
                   <motion.div
@@ -95,12 +83,16 @@ export default function Header() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: i * 0.1 + 0.1 }}
                   >
-                    <Link 
+                    <Link
                       href={item.href}
                       onClick={handleLinkClick}
-                      className={`block text-4xl font-black font-heading uppercase tracking-widest ${
-                        isActive ? 'text-yellow' : 'text-white hover:text-grey-turquoise'
-                      } ${isDonate ? 'mt-8 text-navy bg-yellow inline-block px-8 py-4' : ''}`}
+                      className={`block rounded-[1.5rem] px-5 py-4 text-lg font-medium transition duration-200 ${
+                        isDonate
+                          ? "bg-[var(--color-ink)] text-white"
+                          : isActive
+                            ? "bg-[rgba(216,226,219,0.72)] text-[var(--color-ink)]"
+                            : "bg-white/70 text-[var(--color-ink)]"
+                      }`}
                     >
                       {item.name}
                     </Link>
@@ -108,14 +100,19 @@ export default function Header() {
                 );
               })}
               
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 0.8 }}
-                className="mt-auto pt-8 border-t border-white/20"
+                transition={{ delay: 0.35 }}
+                className="mt-4 rounded-[1.5rem] border border-[color:var(--color-border)] bg-white/70 px-5 py-4"
               >
-                <p className="text-sm font-bold text-white/50 mb-2 uppercase tracking-widest">Contact Us</p>
-                <a href="mailto:hello@brainbristle.org" className="text-xl font-bold text-white hover:text-yellow transition-colors">
+                <p className="mb-2 text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-sage-deep)]">
+                  Contact
+                </p>
+                <a
+                  href="mailto:hello@brainbristle.org"
+                  className="text-lg font-medium text-[var(--color-ink)]"
+                >
                   hello@brainbristle.org
                 </a>
               </motion.div>

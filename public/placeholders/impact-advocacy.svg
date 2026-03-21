@@ -1,0 +1,8 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="44" fill="#EEE4D8"/>
+  <rect x="78" y="78" width="1044" height="744" rx="32" fill="#FCF8F3"/>
+  <circle cx="360" cy="360" r="180" fill="#10233F"/>
+  <circle cx="840" cy="360" r="180" fill="#D7E3DB"/>
+  <rect x="176" y="594" width="848" height="126" rx="28" fill="#CFA86C"/>
+  <text x="176" y="786" fill="#10233F" font-family="Arial, sans-serif" font-size="56" font-weight="700">Advocacy Reach</text>
+</svg>

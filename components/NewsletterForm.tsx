@@ -10,10 +10,18 @@ type NewsletterResponse = {
   error?: string;
 };
 
-export default function NewsletterForm() {
+type NewsletterFormProps = {
+  variant?: "light" | "dark";
+};
+
+export default function NewsletterForm({
+  variant = "dark",
+}: NewsletterFormProps) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<FormStatus>("idle");
   const [message, setMessage] = useState("");
+
+  const isDark = variant === "dark";
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -55,6 +63,13 @@ export default function NewsletterForm() {
 
   return (
     <form onSubmit={handleSubmit} className="w-full max-w-md mx-auto">
+      <label
+        className={`mb-3 block text-xs font-semibold uppercase tracking-[0.24em] ${
+          isDark ? "text-white/55" : "text-[var(--color-muted)]"
+        }`}
+      >
+        Email address
+      </label>
       <div className="relative">
         <input
           type="email"
@@ -63,22 +78,34 @@ export default function NewsletterForm() {
           placeholder="Enter your email"
           required
           disabled={status === "submitting"}
-          className="w-full px-6 py-4 border-2 border-navy focus:outline-none focus:bg-soft-sage/10 transition-all pr-16 bg-white text-navy font-bold placeholder:text-navy/40 disabled:opacity-70"
+          className={`w-full rounded-full px-5 py-4 pr-16 text-sm transition duration-200 focus:outline-none disabled:opacity-70 ${
+            isDark
+              ? "border border-white/14 bg-white/8 text-white placeholder:text-white/40 focus:border-[var(--color-accent-soft)] focus:bg-white/12"
+              : "border border-[color:var(--color-border)] bg-[var(--color-surface-alt)] text-[var(--color-ink)] placeholder:text-[var(--color-muted)] focus:border-[var(--color-accent)] focus:bg-white"
+          }`}
           aria-label="Email address"
         />
         <button
           type="submit"
           disabled={status === "submitting" || status === "success"}
-          className="absolute right-2 top-2 bottom-2 w-12 h-12 flex items-center justify-center bg-yellow text-navy hover:bg-navy hover:text-yellow border-2 border-navy transition-colors disabled:opacity-50"
+          className={`absolute bottom-1.5 right-1.5 top-1.5 flex w-12 items-center justify-center rounded-full transition duration-200 disabled:opacity-50 ${
+            isDark
+              ? "bg-white text-[var(--color-ink)] hover:bg-[var(--color-accent-soft)]"
+              : "bg-[var(--color-ink)] text-white hover:bg-[var(--color-accent)]"
+          }`}
           aria-label="Subscribe to newsletter"
         >
           {status === "success" ? <span className="text-green-600 font-bold">✓</span> : <Send size={18} />}
         </button>
       </div>
 
-      {status === "success" && <p className="text-sm text-green-600 mt-2 text-center">{message}</p>}
+      {status === "success" && (
+        <p className={`mt-3 text-sm ${isDark ? "text-emerald-300" : "text-emerald-700"}`}>{message}</p>
+      )}
 
-      {status === "error" && <p className="text-sm text-red-600 mt-2 text-center">{message}</p>}
+      {status === "error" && (
+        <p className={`mt-3 text-sm ${isDark ? "text-rose-300" : "text-rose-700"}`}>{message}</p>
+      )}
     </form>
   );
 }

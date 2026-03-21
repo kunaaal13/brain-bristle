@@ -1,0 +1,10 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="44" fill="#EEE6DA"/>
+  <rect x="84" y="84" width="1032" height="732" rx="34" fill="#FBF8F3"/>
+  <rect x="164" y="164" width="872" height="190" rx="28" fill="#10233F"/>
+  <rect x="164" y="396" width="872" height="44" rx="18" fill="#CFA86C"/>
+  <rect x="164" y="474" width="540" height="18" rx="9" fill="#687486"/>
+  <rect x="164" y="516" width="650" height="18" rx="9" fill="#687486"/>
+  <rect x="164" y="558" width="590" height="18" rx="9" fill="#687486"/>
+  <text x="164" y="744" fill="#10233F" font-family="Arial, sans-serif" font-size="56" font-weight="700">Selected Press</text>
+</svg>

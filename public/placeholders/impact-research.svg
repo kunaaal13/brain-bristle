@@ -1,0 +1,8 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="44" fill="#EFE7DB"/>
+  <rect x="74" y="74" width="1052" height="752" rx="34" fill="#FBF8F3"/>
+  <rect x="154" y="154" width="892" height="280" rx="26" fill="#10233F"/>
+  <rect x="154" y="474" width="430" height="200" rx="26" fill="#D7E3DB"/>
+  <rect x="616" y="474" width="430" height="200" rx="26" fill="#CFA86C"/>
+  <text x="154" y="764" fill="#10233F" font-family="Arial, sans-serif" font-size="56" font-weight="700">Research Pipeline</text>
+</svg>

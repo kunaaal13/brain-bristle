@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 
 interface FAQItemProps {
@@ -13,36 +13,36 @@ export default function FAQItem({ question, answer }: FAQItemProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b-2 border-navy last:border-b-0">
+    <div className="border-b border-[color:var(--color-border)] last:border-b-0">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full py-6 flex items-center justify-between text-left focus:outline-none group bg-white hover:bg-soft-sage/20 transition-colors px-6"
+        className="flex w-full items-center justify-between gap-6 px-6 py-6 text-left transition duration-200 hover:bg-[rgba(216,226,219,0.24)] focus:outline-none sm:px-8"
       >
-        <h3 className="text-xl font-bold font-heading uppercase text-navy pr-8">
+        <h3 className="pr-8 text-xl font-semibold tracking-[-0.03em] text-[var(--color-ink)]">
           {question}
         </h3>
         <motion.div
           animate={{ rotate: isOpen ? 180 : 0 }}
-          transition={{ duration: 0.3 }}
-          className="flex-shrink-0 text-navy"
+          transition={{ duration: 0.24 }}
+          className="shrink-0 text-[var(--color-sage-deep)]"
         >
-          <ChevronDown size={24} strokeWidth={3} />
+          <ChevronDown size={20} />
         </motion.div>
       </button>
-      <AnimatePresence>
-        {isOpen && (
+      <AnimatePresence initial={false}>
+        {isOpen ? (
           <motion.div
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            className="overflow-hidden bg-white px-6"
+            transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
+            className="overflow-hidden"
           >
-            <p className="pb-6 pt-2 text-navy/80 font-medium leading-relaxed text-lg border-t border-navy/10 mt-4">
+            <p className="px-6 pb-6 text-base leading-8 text-[var(--color-muted)] sm:px-8">
               {answer}
             </p>
           </motion.div>
-        )}
+        ) : null}
       </AnimatePresence>
     </div>
   );

@@ -6,8 +6,8 @@ interface FilmCardProps {
 
 export default function FilmCard({ title, description, videoId }: FilmCardProps) {
   return (
-    <div className="bg-white border-2 border-navy flex flex-col h-full hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[8px_8px_0px_0px_rgba(21,46,76,1)] transition-all">
-      <div className="relative w-full pt-[56.25%] bg-navy border-b-2 border-navy">
+    <div className="flex h-full flex-col overflow-hidden rounded-[2rem] border border-[color:var(--color-border)] bg-white shadow-[0_22px_60px_rgba(16,35,63,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_30px_80px_rgba(16,35,63,0.14)]">
+      <div className="relative w-full bg-[var(--color-ink)] pt-[56.25%]">
         <iframe
           className="absolute top-0 left-0 w-full h-full"
           src={`https://www.youtube.com/embed/${videoId}`}
@@ -16,11 +16,12 @@ export default function FilmCard({ title, description, videoId }: FilmCardProps)
           allowFullScreen
         ></iframe>
       </div>
-      <div className="p-8 flex-grow flex flex-col">
-        <h3 className="text-2xl font-black font-heading text-navy uppercase mb-4">{title}</h3>
-        <p className="text-navy/80 font-medium leading-relaxed">
-          {description}
+      <div className="flex flex-grow flex-col p-8">
+        <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-accent)]">
+          Film
         </p>
+        <h3 className="text-2xl font-semibold tracking-[-0.04em] text-[var(--color-ink)]">{title}</h3>
+        <p className="mt-4 text-base leading-8 text-[var(--color-muted)]">{description}</p>
       </div>
     </div>
   );

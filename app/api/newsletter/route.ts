@@ -39,6 +39,43 @@ function getBasicAuthHeader(apiKey: string) {
   return `Basic ${credentials}`;
 }
 
+async function addMemberTag({
+  apiKey,
+  serverPrefix,
+  audienceId,
+  subscriberHash,
+  tag,
+}: {
+  apiKey: string;
+  serverPrefix: string;
+  audienceId: string;
+  subscriberHash: string;
+  tag: string;
+}) {
+  const tagResponse = await fetch(
+    `https://${serverPrefix}.api.mailchimp.com/3.0/lists/${audienceId}/members/${subscriberHash}/tags`,
+    {
+      method: "POST",
+      headers: {
+        Authorization: getBasicAuthHeader(apiKey),
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        tags: [{ name: tag, status: "active" }],
+      }),
+      cache: "no-store",
+    },
+  );
+
+  if (!tagResponse.ok) {
+    const data = await tagResponse.json().catch(() => null);
+    const message =
+      data && typeof data.detail === "string" ? data.detail : `Unable to apply Mailchimp tag "${tag}".`;
+
+    throw new Error(message);
+  }
+}
+
 export async function POST(request: NextRequest) {
   const config = getMailchimpConfig();
 
@@ -89,6 +126,14 @@ export async function POST(request: NextRequest) {
 
       return NextResponse.json({ message }, { status: mailchimpResponse.status });
     }
+
+    await addMemberTag({
+      apiKey: config.apiKey,
+      serverPrefix: config.serverPrefix,
+      audienceId: config.audienceId,
+      subscriberHash,
+      tag: "News letter",
+    });
 
     return NextResponse.json(
       {

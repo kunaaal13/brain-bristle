@@ -1,0 +1,11 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="44" fill="#EEE4D8"/>
+  <rect x="86" y="86" width="1028" height="728" rx="34" fill="#FBF8F3"/>
+  <rect x="170" y="170" width="860" height="420" rx="28" fill="#10233F"/>
+  <rect x="238" y="246" width="420" height="28" rx="14" fill="#CFA86C"/>
+  <rect x="238" y="304" width="600" height="18" rx="9" fill="#E4E8E4"/>
+  <rect x="238" y="346" width="530" height="18" rx="9" fill="#E4E8E4"/>
+  <rect x="238" y="388" width="460" height="18" rx="9" fill="#E4E8E4"/>
+  <rect x="170" y="624" width="860" height="92" rx="24" fill="#F1E8DC"/>
+  <text x="170" y="774" fill="#10233F" font-family="Arial, sans-serif" font-size="56" font-weight="700">Research Vertical</text>
+</svg>

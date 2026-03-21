@@ -1,0 +1,12 @@
+<svg width="1200" height="1500" viewBox="0 0 1200 1500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1500" rx="56" fill="#EEE6DB"/>
+  <rect x="84" y="84" width="1032" height="1332" rx="42" fill="#FBF8F3"/>
+  <rect x="162" y="180" width="876" height="540" rx="30" fill="#10233F"/>
+  <rect x="228" y="270" width="744" height="36" rx="18" fill="#CFA86C"/>
+  <rect x="228" y="336" width="520" height="24" rx="12" fill="#E2E8E5"/>
+  <rect x="228" y="394" width="600" height="24" rx="12" fill="#E2E8E5"/>
+  <rect x="228" y="452" width="480" height="24" rx="12" fill="#E2E8E5"/>
+  <rect x="162" y="778" width="414" height="278" rx="28" fill="#D7E3DB"/>
+  <rect x="624" y="778" width="414" height="278" rx="28" fill="#CFA86C"/>
+  <text x="164" y="1238" fill="#10233F" font-family="Arial, sans-serif" font-size="64" font-weight="700">Research Notes</text>
+</svg>

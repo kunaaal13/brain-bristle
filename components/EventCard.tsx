@@ -6,14 +6,12 @@ interface EventCardProps {
 
 export default function EventCard({ speaker, topic, description }: EventCardProps) {
   return (
-    <div className="bg-white p-8 border-2 border-navy hover:-translate-y-2 hover:-translate-x-2 hover:shadow-[8px_8px_0px_0px_rgba(21,46,76,1)] transition-all h-full flex flex-col">
-      <div className="mb-6 border-b-2 border-navy pb-4">
-        <h4 className="text-sm font-bold text-grey-turquoise tracking-widest uppercase mb-2">{speaker}</h4>
-        <h3 className="text-3xl font-black font-heading text-navy leading-tight uppercase">{topic}</h3>
+    <div className="flex h-full flex-col rounded-[2rem] border border-[color:var(--color-border)] bg-white/88 p-8 shadow-[0_22px_60px_rgba(16,35,63,0.06)] backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:shadow-[0_30px_80px_rgba(16,35,63,0.12)]">
+      <div className="mb-5 border-b border-[color:var(--color-border)] pb-5">
+        <h4 className="mb-2 text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-accent)]">{speaker}</h4>
+        <h3 className="text-2xl font-semibold tracking-[-0.04em] text-[var(--color-ink)]">{topic}</h3>
       </div>
-      <p className="text-navy/80 font-medium leading-relaxed flex-grow">
-        {description}
-      </p>
+      <p className="flex-grow text-base leading-8 text-[var(--color-muted)]">{description}</p>
     </div>
   );
 }

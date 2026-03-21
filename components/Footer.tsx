@@ -1,52 +1,45 @@
-import Link from 'next/link';
-import { Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
-import { navigation } from '../content/data';
-import NewsletterForm from './NewsletterForm';
+import Link from "next/link";
+import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+import { contentData, navigation } from "../content/data";
+import BrandMark from "./BrandMark";
+import NewsletterForm from "./NewsletterForm";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-navy text-off-white pt-20 pb-10 mt-auto border-t-[8px] border-yellow">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-          
-          {/* Brand Info */}
-          <div className="lg:col-span-1">
-            <Link href="/" className="text-2xl font-bold font-heading text-white tracking-tight flex items-center gap-2 mb-6">
-              <div className="w-6 h-6 rounded-full bg-yellow flex items-center justify-center">
-                <div className="w-2 h-2 rounded-full bg-navy"></div>
-              </div>
-              BRAIN BRISTLE
-            </Link>
-            <p className="text-off-white/80 text-sm leading-relaxed mb-8">
-              Autism. Inclusion. Education. Equity.<br/>
-              Empowering children on the autism spectrum in low-income schools through early intervention and inclusion.
+    <footer className="mt-auto border-t border-[color:var(--color-border)] bg-[var(--color-ink)] text-white">
+      <div className="mx-auto max-w-7xl px-6 py-16 sm:px-8 lg:px-12">
+        <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr_0.9fr_1fr]">
+          <div>
+            <div className="[&_a]:text-white [&_span:last-child]:text-white/55">
+              <BrandMark />
+            </div>
+            <p className="mt-6 max-w-md text-sm leading-7 text-white/72">
+              Brain Bristle builds autism inclusion through school-based intervention, educator partnership, public advocacy, and emerging research grounded in practice.
             </p>
-            <div className="flex gap-4">
-              <a href="https://linkedin.com/company/brain-bristle" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-yellow hover:text-navy transition-all">
+            <div className="mt-8 flex gap-3">
+              <a href="https://linkedin.com/company/brain-bristle" target="_blank" rel="noreferrer" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/14 bg-white/6 text-white transition duration-200 hover:border-[var(--color-accent-soft)] hover:bg-white/12">
                 <Linkedin size={18} />
               </a>
-              <a href="https://instagram.com/brainbristle" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-yellow hover:text-navy transition-all">
+              <a href="https://instagram.com/brainbristle" target="_blank" rel="noreferrer" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/14 bg-white/6 text-white transition duration-200 hover:border-[var(--color-accent-soft)] hover:bg-white/12">
                 <Instagram size={18} />
               </a>
-              <a href="https://youtube.com/channel/UCq0-SKbxJascPFedLh3PdeA" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-yellow hover:text-navy transition-all">
+              <a href="https://youtube.com/channel/UCq0-SKbxJascPFedLh3PdeA" target="_blank" rel="noreferrer" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/14 bg-white/6 text-white transition duration-200 hover:border-[var(--color-accent-soft)] hover:bg-white/12">
                 <Youtube size={18} />
               </a>
-              <a href="https://facebook.com/brainbristle" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-yellow hover:text-navy transition-all">
+              <a href="https://facebook.com/brainbristle" target="_blank" rel="noreferrer" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/14 bg-white/6 text-white transition duration-200 hover:border-[var(--color-accent-soft)] hover:bg-white/12">
                 <Facebook size={18} />
               </a>
             </div>
           </div>
 
-          {/* Navigation Links */}
           <div>
-            <h3 className="text-lg font-bold font-heading mb-6 text-yellow tracking-wide uppercase">Quick Links</h3>
-            <ul className="space-y-3">
-              {navigation.slice(0, 4).map((item) => (
+            <h3 className="text-xs font-semibold uppercase tracking-[0.26em] text-white/55">Navigation</h3>
+            <ul className="mt-5 space-y-3">
+              {navigation.map((item) => (
                 <li key={item.name}>
-                  <Link href={item.href} className="text-off-white/70 hover:text-white transition-colors flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-grey-turquoise opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <Link href={item.href} className="text-sm text-white/78 transition duration-200 hover:text-white">
                     {item.name}
                   </Link>
                 </li>
@@ -55,41 +48,33 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-bold font-heading mb-6 text-yellow tracking-wide uppercase">More</h3>
-            <ul className="space-y-3">
-              {navigation.slice(4).map((item) => (
-                <li key={item.name}>
-                  <Link href={item.href} className="text-off-white/70 hover:text-white transition-colors flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-grey-turquoise opacity-0 group-hover:opacity-100 transition-opacity" />
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <h3 className="text-xs font-semibold uppercase tracking-[0.26em] text-white/55">Contact</h3>
+            <div className="mt-5 space-y-3 text-sm text-white/78">
+              <p>{contentData.contact.city}</p>
+              <p>{contentData.contact.hours}</p>
+              <a href={`mailto:${contentData.contact.email}`} className="block transition duration-200 hover:text-white">
+                {contentData.contact.email}
+              </a>
+              <a href={`mailto:${contentData.contact.founderEmail}`} className="block transition duration-200 hover:text-white">
+                {contentData.contact.founderEmail}
+              </a>
+            </div>
           </div>
 
-          {/* Newsletter */}
-          <div className="lg:col-span-1">
-            <h3 className="text-lg font-bold font-heading mb-6 text-yellow tracking-wide uppercase">Subscribe</h3>
-            <p className="text-off-white/70 text-sm mb-6">
-              Join our monthly newsletter for updates on autism, inclusion, and advocacy.
+          <div>
+            <h3 className="text-xs font-semibold uppercase tracking-[0.26em] text-white/55">Newsletter</h3>
+            <p className="mt-5 max-w-sm text-sm leading-7 text-white/72">
+              Join the mailing list for field notes, research reflections, event updates, and new storytelling from Brain Bristle.
             </p>
-            <NewsletterForm />
+            <div className="mt-6">
+              <NewsletterForm />
+            </div>
           </div>
-
         </div>
 
-        {/* Bottom Bar */}
-        <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-off-white/50">
-            &copy; {currentYear} Brain Bristle. All Rights Reserved.
-          </p>
-          <div className="flex items-center gap-6 text-sm text-off-white/50">
-            <a href="mailto:hello@brainbristle.org" className="hover:text-white transition-colors">
-              hello@brainbristle.org
-            </a>
-            <span>Monday - Saturday</span>
-          </div>
+        <div className="mt-14 flex flex-col gap-3 border-t border-white/10 pt-6 text-sm text-white/50 md:flex-row md:items-center md:justify-between">
+          <p>&copy; {currentYear} Brain Bristle. All rights reserved.</p>
+          <p>Built for clarity, credibility, and long-term support.</p>
         </div>
       </div>
     </footer>

@@ -1,0 +1,9 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="44" fill="#EEE5D9"/>
+  <rect x="84" y="84" width="1032" height="732" rx="34" fill="#FBF8F3"/>
+  <rect x="156" y="164" width="888" height="250" rx="28" fill="#D7E3DB"/>
+  <rect x="156" y="456" width="270" height="214" rx="24" fill="#10233F"/>
+  <rect x="465" y="456" width="270" height="214" rx="24" fill="#CFA86C"/>
+  <rect x="774" y="456" width="270" height="214" rx="24" fill="#D7E3DB"/>
+  <text x="156" y="760" fill="#10233F" font-family="Arial, sans-serif" font-size="56" font-weight="700">Public Conversations</text>
+</svg>

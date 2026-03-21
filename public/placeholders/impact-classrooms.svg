@@ -1,0 +1,9 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="44" fill="#EFE7DB"/>
+  <rect x="70" y="70" width="1060" height="760" rx="32" fill="#FBF8F3"/>
+  <rect x="126" y="126" width="308" height="290" rx="24" fill="#10233F"/>
+  <rect x="446" y="126" width="308" height="290" rx="24" fill="#D7E3DB"/>
+  <rect x="766" y="126" width="308" height="290" rx="24" fill="#CFA86C"/>
+  <rect x="126" y="438" width="948" height="170" rx="28" fill="#F1E8DC"/>
+  <text x="126" y="722" fill="#10233F" font-family="Arial, sans-serif" font-size="56" font-weight="700">Classroom Footprint</text>
+</svg>
