@@ -24,18 +24,19 @@ export default function ResearchPage() {
       />
 
       <section className="section-editorial border-b border-[color:var(--color-border)]">
-        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 sm:px-8 lg:grid-cols-[0.92fr_1.08fr] lg:px-12">
+        <div className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12">
           <ScrollReveal>
             <SectionIntro
               label={research.intro.label}
               title={research.intro.headline}
               description={research.intro.description}
+              align="center"
             />
           </ScrollReveal>
-          <div className="grid gap-5">
+          <div className="mt-12 grid gap-6 lg:grid-cols-3">
             {research.currentPractice.map((item, index) => (
               <ScrollReveal key={item.title} delay={index * 0.08}>
-                <article className="panel-light flex h-full flex-col rounded-[1.9rem] p-6">
+                <article className="panel-light flex h-full flex-col rounded-[2rem] p-7">
                   <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-sage-deep)]">
                     0{index + 1}
                   </p>
@@ -51,50 +52,50 @@ export default function ResearchPage() {
       </section>
 
       <section className="section-turquoise border-b border-[color:var(--color-border)]">
-        <div className="mx-auto grid max-w-7xl items-start gap-10 px-6 py-20 sm:px-8 lg:grid-cols-[1fr_0.95fr] lg:px-12">
+        <div className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12">
           <ScrollReveal>
-            <div className="panel-soft overflow-hidden rounded-[2rem]">
-              <div className="relative aspect-[16/12]">
+            <SectionIntro
+              label={research.resources.label}
+              title={research.resources.headline}
+              description={research.resources.description}
+              align="center"
+            />
+          </ScrollReveal>
+          <ScrollReveal delay={0.06}>
+            <div className="panel-soft mt-12 overflow-hidden rounded-[2.2rem]">
+              <div className="relative aspect-[16/9] min-h-[20rem]">
                 <Image
                   src={research.visual.image}
                   alt={research.visual.alt}
                   fill
-                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  sizes="100vw"
                   className="object-cover"
                 />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(21,46,76,0.04)_0%,rgba(21,46,76,0.14)_46%,rgba(21,46,76,0.6)_100%)]" />
               </div>
               <div className="px-6 py-5 text-sm font-medium text-[var(--color-muted)]">
                 {research.visual.title}
               </div>
             </div>
           </ScrollReveal>
-          <div>
-            <ScrollReveal>
-              <SectionIntro
-                label={research.resources.label}
-                title={research.resources.headline}
-                description={research.resources.description}
-              />
-            </ScrollReveal>
-            <div className="mt-10 grid gap-4">
-              {research.resources.links.map((link, index) => (
-                <ScrollReveal key={link.title} delay={index * 0.08}>
-                  <div className="panel-light flex min-h-[11rem] h-full flex-col rounded-[1.8rem] p-5">
-                    <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-sage-deep)]">
-                      WIP resource
-                    </p>
-                    <div className="mt-3 flex flex-grow flex-col items-start justify-between gap-6">
-                      <h3 className="text-xl font-semibold tracking-[-0.04em] text-[var(--color-ink)]">
-                        {link.title}
-                      </h3>
-                      <Link href={link.href} className="text-sm font-medium text-[var(--color-turquoise)]">
-                        Coming soon
-                      </Link>
-                    </div>
+          <div className="mt-8 grid gap-5 md:grid-cols-2">
+            {research.resources.links.map((link, index) => (
+              <ScrollReveal key={link.title} delay={index * 0.08}>
+                <div className="panel-light flex h-full min-h-[12rem] flex-col rounded-[1.8rem] p-6">
+                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-sage-deep)]">
+                    WIP resource
+                  </p>
+                  <h3 className="mt-4 text-2xl font-semibold tracking-[-0.04em] text-[var(--color-ink)]">
+                    {link.title}
+                  </h3>
+                  <div className="mt-auto pt-8">
+                    <Link href={link.href} className="text-sm font-medium text-[var(--color-turquoise)]">
+                      Coming soon
+                    </Link>
                   </div>
-                </ScrollReveal>
-              ))}
-            </div>
+                </div>
+              </ScrollReveal>
+            ))}
           </div>
         </div>
       </section>

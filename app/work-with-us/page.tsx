@@ -62,7 +62,7 @@ export default function WorkWithUsPage() {
                   <div className="relative aspect-[16/10]">
                     <Image
                       src={group.people[0].image}
-                      alt={`Placeholder image for ${group.title}`}
+                      alt={`Visual supporting ${group.title} at Brain Bristle`}
                       fill
                       sizes="(max-width: 1024px) 100vw, 32vw"
                       className="object-cover"

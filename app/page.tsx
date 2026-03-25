@@ -62,43 +62,48 @@ export default function Home() {
               tone="inverse"
             />
           </ScrollReveal>
-          <div className="mt-12 grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
-            <div className="grid gap-5 md:grid-cols-2">
-              {home.problem.stats.map((item, index) => (
-                <ScrollReveal key={item.label} delay={index * 0.06}>
-                  <div className="rounded-[1.9rem] border border-[rgba(255,250,242,0.14)] bg-[rgba(255,255,255,0.08)] p-6 shadow-[0_24px_60px_rgba(6,18,34,0.16)]">
-                    <div className="text-4xl font-semibold tracking-[-0.06em] text-[var(--color-accent-soft)] sm:text-5xl">
-                      {item.value}
-                    </div>
-                    <p className="mt-3 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--color-off-white)]">
-                      {item.label}
-                    </p>
-                    <p className="mt-4 text-sm leading-7 text-white/72">{item.note}</p>
+          <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+            {home.problem.stats.map((item, index) => (
+              <ScrollReveal key={item.label} delay={index * 0.06}>
+                <div className="flex h-full flex-col rounded-[1.9rem] border border-[rgba(255,250,242,0.14)] bg-[rgba(255,255,255,0.08)] p-6 shadow-[0_24px_60px_rgba(6,18,34,0.16)]">
+                  <div className="text-4xl font-semibold tracking-[-0.06em] text-[var(--color-accent-soft)] sm:text-5xl">
+                    {item.value}
                   </div>
-                </ScrollReveal>
-              ))}
-            </div>
-            <ScrollReveal delay={0.12}>
-              <div className="panel-dark overflow-hidden rounded-[2rem]">
-                <div className="relative aspect-[4/4.3]">
+                  <p className="mt-3 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--color-off-white)]">
+                    {item.label}
+                  </p>
+                  <p className="mt-4 text-sm leading-7 text-white/72">{item.note}</p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+          <ScrollReveal delay={0.12}>
+            <div className="panel-dark mt-8 overflow-hidden rounded-[2.2rem]">
+              <div className="grid items-stretch lg:grid-cols-[1.08fr_0.92fr]">
+                <div className="relative min-h-[22rem] lg:min-h-[30rem]">
                   <Image
                     src={home.problem.visual.image}
                     alt={home.problem.visual.alt}
                     fill
-                    sizes="(max-width: 1024px) 100vw, 32vw"
+                    sizes="(max-width: 1024px) 100vw, 54vw"
                     className="object-cover"
                   />
-                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(21,46,76,0.12)_0%,rgba(21,46,76,0.78)_100%)]" />
+                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(21,46,76,0.08)_0%,rgba(21,46,76,0.18)_42%,rgba(21,46,76,0.74)_100%)]" />
+                  <div className="absolute inset-x-0 top-0 p-5 sm:p-6">
+                    <div className="eyebrow eyebrow-dark">From the ground</div>
+                  </div>
                 </div>
-                <div className="px-6 py-6">
-                  <h3 className="text-2xl font-semibold tracking-[-0.04em] text-[var(--color-off-white)]">
+                <div className="flex flex-col justify-center bg-[linear-gradient(135deg,rgba(9,22,40,0.96),rgba(21,46,76,0.88))] px-6 py-8 sm:px-8 sm:py-10 lg:px-10">
+                  <p className="text-xs font-semibold uppercase tracking-[0.26em] text-[var(--color-accent-soft)]">
                     {home.problem.visual.title}
-                  </h3>
-                  <p className="mt-4 text-sm leading-7 text-white/76">{home.problem.closing}</p>
+                  </p>
+                  <p className="mt-5 max-w-xl text-lg leading-8 text-white/82 sm:text-xl sm:leading-9">
+                    {home.problem.closing}
+                  </p>
                 </div>
               </div>
-            </ScrollReveal>
-          </div>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 

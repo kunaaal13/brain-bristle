@@ -75,8 +75,8 @@ export const contentData = {
       closing:
         'With effective intervention at scale, Brain Bristle believes millions of autism life trajectories can shift toward stronger learning, participation, and independence.',
       visual: {
-        image: '/placeholders/hero-community.svg',
-        alt: 'Placeholder visual representing a child-centered support environment',
+        image: '/photos/problem-classroom.jpg',
+        alt: 'Children seated together in a classroom with a Brain Bristle educator supporting from the floor',
         title: 'Support must reach the children already in our systems',
       },
     },
@@ -96,29 +96,29 @@ export const contentData = {
           title: 'Recruiting Social Work Fellows',
           description:
             'Brain Bristle recruits Social Work Fellows from counselling, psychology, psychiatry, education, and adjacent pathways to work with students on the autism spectrum and other learning needs for at least one academic year.',
-          image: '/placeholders/hero-classroom.svg',
-          alt: 'Placeholder classroom illustration for Social Work Fellow recruitment',
+          image: '/photos/school-group-celebration.jpg',
+          alt: 'Children and Brain Bristle team members together inside a school corridor',
         },
         {
           title: 'Ongoing Training and Supervision',
           description:
             'Fellows are trained throughout the year in autism, teaching, and leadership pedagogy, with additional support from partner organisations such as The Circle India U and ASB.',
-          image: '/placeholders/research-editorial.svg',
-          alt: 'Placeholder visual for ongoing training and supervision',
+          image: '/photos/team-planning.jpg',
+          alt: 'Two Brain Bristle team members reviewing notes together during a planning session outdoors',
         },
         {
           title: 'Academic Intervention',
           description:
             'Social Work Fellows work with Individualized Education Plans and Student Accommodation Plans to support each student toward meaningful school-based achievement goals.',
-          image: '/placeholders/impact-classrooms.svg',
-          alt: 'Placeholder visual for academic intervention and classroom support',
+          image: '/photos/outdoor-learning.jpg',
+          alt: 'Brain Bristle facilitators and children working together over learning sheets during an outdoor activity',
         },
         {
           title: 'Advocacy and Awareness',
           description:
             'Brain Bristle brings advocacy to life through research, communication, events, and daily engagement with multiple stakeholders and organisations shaping inclusion in India.',
-          image: '/placeholders/media-event.svg',
-          alt: 'Placeholder visual for advocacy and awareness work',
+          image: '/photos/public-conversation.jpg',
+          alt: 'A large audience gathered for a Brain Bristle public event and conversation',
         },
       ],
     },
@@ -146,8 +146,8 @@ export const contentData = {
         },
       ],
       visual: {
-        image: '/placeholders/impact-research.svg',
-        alt: 'Placeholder visual representing an autism learning and support framework',
+        image: '/photos/school-group-celebration.jpg',
+        alt: 'Children and school staff gathered together during a Brain Bristle school visit',
         title: 'Inclusion, support, and educational access must move together',
       },
     },
@@ -264,45 +264,45 @@ export const contentData = {
         title: 'Direct Intervention',
         description:
           'One-to-one student support in classrooms remains the clearest proof point of what equitable inclusion can look like in practice.',
-        image: '/placeholders/impact-classrooms.svg',
-        alt: 'Placeholder visual for direct intervention inside classrooms',
+        image: '/photos/outdoor-learning.jpg',
+        alt: 'Facilitators and children engaging in guided learning together outdoors',
       },
       {
         title: 'Implementation',
         description:
           'The work is sustained through on-ground supervision, classroom adaptation, school partnership, and systems that keep practice consistent.',
-        image: '/placeholders/impact-advocacy.svg',
-        alt: 'Placeholder visual for implementation and school-based systems',
+        image: '/photos/team-planning.jpg',
+        alt: 'Team members reviewing notes and planning together during a school-day session',
       },
       {
         title: 'Sharing learnings and blueprints',
         description:
           'Brain Bristle carries learnings outward through public dialogue, events, organisational writing, and the research practice now taking shape.',
-        image: '/placeholders/impact-research.svg',
-        alt: 'Placeholder visual for research sharing and blueprint-building',
+        image: '/photos/public-conversation.jpg',
+        alt: 'A Brain Bristle gathering with a large audience during a public event',
       },
     ],
     fellowGallery: [
       {
-        image: '/placeholders/team-grid-1.svg',
-        alt: 'Placeholder visual for Social Work Fellow documentation in schools',
+        image: '/photos/problem-classroom.jpg',
+        alt: 'A Brain Bristle educator seated with children inside a classroom',
         title: 'School-based intervention',
         caption:
-          'A future photo slot for fellows working within classrooms and school systems.',
+          'The work is rooted in classrooms where students are already learning and where support can quietly shift daily participation.',
       },
       {
-        image: '/placeholders/team-grid-2.svg',
-        alt: 'Placeholder visual for Social Work Fellow support in school environments',
+        image: '/photos/outdoor-learning.jpg',
+        alt: 'Children and facilitators working together over learning materials outdoors',
         title: 'Implementation across sites',
         caption:
-          'A future photo slot showing how support scales across multiple schools.',
+          'Implementation depends on routine, coordination, and enough field presence to adapt support to each school context.',
       },
       {
-        image: '/placeholders/team-grid-3.svg',
-        alt: 'Placeholder visual for public-facing learning and storytelling',
+        image: '/photos/public-conversation.jpg',
+        alt: 'A crowded Brain Bristle event with speakers in front of a seated audience',
         title: 'Learning carried outward',
         caption:
-          'A future photo slot for panels, public learning, and community engagement.',
+          'What is learned on the ground has to travel outward through public conversations, writing, and shared language.',
       },
     ],
     closingLine:
@@ -360,8 +360,8 @@ export const contentData = {
       { title: 'The I Rise When We Rise Special', date: 'September 2025' },
     ],
     visual: {
-      image: '/placeholders/research-editorial.svg',
-      alt: 'Placeholder editorial visual for research notes and archive building',
+      image: '/photos/classroom-note-taking.jpg',
+      alt: 'A Brain Bristle team member writing notes inside a classroom while students work in the background',
       title: 'Research as a public-facing practice',
     },
   },
@@ -376,17 +376,17 @@ export const contentData = {
       headline:
         'The organisation is held together by multiple working groups and a shared field-facing ethic.',
       description:
-        'For now, the structure is represented with placeholder image slots and role content so photography can be swapped in later without reworking the layout.',
+        'The organisation runs through school work, training, operations, communications, and research, all held together by people working closely across contexts.',
       photos: [
         {
-          image: '/placeholders/team-grid-1.svg',
-          alt: 'Placeholder image for a future full-team photograph',
-          label: 'Future team photograph slot 01',
+          image: '/photos/team-planning.jpg',
+          alt: 'Two Brain Bristle team members sitting outdoors while reviewing notes and planning together',
+          label: 'Planning, reflection, and daily coordination shape the work behind the scenes.',
         },
         {
-          image: '/placeholders/team-grid-2.svg',
-          alt: 'Placeholder image for a future team work photograph',
-          label: 'Future team photograph slot 02',
+          image: '/photos/workshop-reading.jpg',
+          alt: 'A Brain Bristle group event where team members are reading together in a workshop space',
+          label: 'Workshops, readings, and collaborative learning remain part of the organisation’s internal rhythm.',
         },
       ],
       groups: [
@@ -397,8 +397,8 @@ export const contentData = {
               name: 'Staff profile forthcoming',
               role: 'Programs and operations',
               summary:
-                'A placeholder slot for a future staff profile connected to program delivery and operational execution.',
-              image: '/placeholders/team-portrait-a.svg',
+                'Programs and operations hold together the daily movement between school delivery, coordination, follow-through, and organisational reliability.',
+              image: '/photos/problem-classroom.jpg',
             },
           ],
         },
@@ -409,8 +409,8 @@ export const contentData = {
               name: 'Board profile forthcoming',
               role: 'Advisory and governance',
               summary:
-                'A placeholder slot for future board and advisory leadership profiles.',
-              image: '/placeholders/team-portrait-b.svg',
+                'Board and advisory support help the organisation think long-term about stewardship, governance, and the conditions needed for sustainable growth.',
+              image: '/photos/workshop-reading.jpg',
             },
           ],
         },
@@ -421,8 +421,8 @@ export const contentData = {
               name: 'Leadership profile forthcoming',
               role: 'Strategy and direction',
               summary:
-                'A placeholder slot for organisational leadership shaping long-range direction, partnerships, and systems.',
-              image: '/placeholders/team-founder.svg',
+                'Leadership shapes the broader direction of the work, from school partnerships and systems thinking to public voice and long-range organisational priorities.',
+              image: '/photos/school-group-celebration.jpg',
             },
           ],
         },
@@ -433,8 +433,8 @@ export const contentData = {
               name: 'Training profile forthcoming',
               role: 'Training and supervision',
               summary:
-                'A placeholder slot for future training and supervision profiles connected to fellow development.',
-              image: '/placeholders/team-portrait-c.svg',
+                'Training teams build the reflective and practical structures that help fellows stay supported, supervised, and better equipped in the field.',
+              image: '/photos/team-planning.jpg',
             },
           ],
         },
@@ -445,8 +445,8 @@ export const contentData = {
               name: 'Communications profile forthcoming',
               role: 'Public voice and storytelling',
               summary:
-                "A placeholder slot for future communications profiles carrying Brain Bristle's public voice.",
-              image: '/placeholders/team-portrait-d.svg',
+                "Communications carries the organisation's public voice through events, writing, campaigns, and the language used to make autism more legible to wider audiences.",
+              image: '/photos/public-conversation.jpg',
             },
           ],
         },
@@ -457,8 +457,8 @@ export const contentData = {
               name: 'Research profile forthcoming',
               role: 'Research and knowledge work',
               summary:
-                'A placeholder slot for future research-facing profiles tied to knowledge building and public translation.',
-              image: '/placeholders/team-portrait-e.svg',
+                'Research and knowledge work turn field observations into documentation, reflection, and public resources that can support educators, families, and collaborators.',
+              image: '/photos/classroom-note-taking.jpg',
             },
           ],
         },
@@ -469,35 +469,39 @@ export const contentData = {
       headline:
         "Social Work Fellows form the field-facing core of the organisation's school work.",
       description:
-        'This section is structured as a future carousel of fellows with names and photos. For now, placeholder profiles keep the design and data model ready for later updates.',
+        'These images show the kinds of field contexts fellows move through: classroom presence, guided learning, careful observation, and team support.',
       items: [
         {
-          name: 'Fellow profile 01',
-          role: 'Social Work Fellow',
-          description: 'Placeholder slot for a future fellow profile and name.',
-          image: '/placeholders/team-portrait-a.svg',
-          alt: 'Placeholder portrait for a Social Work Fellow',
+          name: 'Classroom presence',
+          role: 'School-based support',
+          description:
+            'Fellows work within existing school spaces, helping children access routine, participation, and learning without being pulled away from the classroom.',
+          image: '/photos/problem-classroom.jpg',
+          alt: 'Children seated in a classroom with a Brain Bristle educator supporting nearby',
         },
         {
-          name: 'Fellow profile 02',
-          role: 'Social Work Fellow',
-          description: 'Placeholder slot for a future fellow profile and name.',
-          image: '/placeholders/team-portrait-b.svg',
-          alt: 'Placeholder portrait for a Social Work Fellow',
+          name: 'Guided small-group work',
+          role: 'Direct intervention',
+          description:
+            'A fellow’s day often includes structured one-to-one or small-group activities that help children engage with learning goals in more workable ways.',
+          image: '/photos/outdoor-learning.jpg',
+          alt: 'Children and facilitators seated together around learning sheets during a guided activity',
         },
         {
-          name: 'Fellow profile 03',
-          role: 'Social Work Fellow',
-          description: 'Placeholder slot for a future fellow profile and name.',
-          image: '/placeholders/team-portrait-c.svg',
-          alt: 'Placeholder portrait for a Social Work Fellow',
+          name: 'Observation and documentation',
+          role: 'Learning closely',
+          description:
+            'The work also depends on note-taking, observation, and a close understanding of what a child needs in order to stay included and supported.',
+          image: '/photos/classroom-note-taking.jpg',
+          alt: 'A Brain Bristle team member writing notes in a classroom while students work in the background',
         },
         {
-          name: 'Fellow profile 04',
-          role: 'Social Work Fellow',
-          description: 'Placeholder slot for a future fellow profile and name.',
-          image: '/placeholders/team-portrait-d.svg',
-          alt: 'Placeholder portrait for a Social Work Fellow',
+          name: 'Team supervision',
+          role: 'Training and support',
+          description:
+            'Fellows are sustained through planning, supervision, and regular learning spaces that help the work stay thoughtful over time.',
+          image: '/photos/team-planning.jpg',
+          alt: 'Two Brain Bristle team members sitting outdoors with notes spread beside them',
         },
       ],
     },
@@ -641,19 +645,19 @@ export const contentData = {
       'Brain Bristle uses film, conversation, press, and long-form writing to deepen how autism is understood across education, family life, and public culture.',
     gallery: [
       {
-        image: '/placeholders/media-film.svg',
-        alt: 'Placeholder still representing film and documentary work',
-        label: 'Films and documentary work',
+        image: '/photos/public-conversation.jpg',
+        alt: 'A large public audience gathered at a Brain Bristle event',
+        label: 'Public conversations that widen the organisation’s voice',
       },
       {
-        image: '/placeholders/media-event.svg',
-        alt: 'Placeholder still representing a live event or public conversation',
-        label: 'Events and conversations',
+        image: '/photos/workshop-reading.jpg',
+        alt: 'A Brain Bristle workshop or reading session with multiple people gathered together',
+        label: 'Workshops, readings, and intimate gatherings',
       },
       {
-        image: '/placeholders/media-press.svg',
-        alt: 'Placeholder still representing press, readings, and articles',
-        label: 'Press, readings, and articles',
+        image: '/photos/school-group-celebration.jpg',
+        alt: 'Children and educators standing together in a school setting',
+        label: 'School stories that feed the broader public narrative',
       },
     ],
     films: [

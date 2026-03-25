@@ -123,9 +123,9 @@ export default function ImpactPage() {
         <div className='mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12'>
           <ScrollReveal>
             <SectionIntro
-              label='Social Work Fellow Photos'
-              title='A future visual archive for the people doing this work on the ground.'
-              description='This carousel is wired to placeholder image URLs now so real fellow and school photos can be swapped in later without redesigning the section.'
+              label='On the Ground'
+              title='The impact looks different when you see the settings where it is built.'
+              description='These images bring the impact story back to classrooms, field routines, and the public moments where learning is carried outward.'
               align='center'
             />
           </ScrollReveal>

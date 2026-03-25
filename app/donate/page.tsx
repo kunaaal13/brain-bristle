@@ -68,7 +68,7 @@ export default function DonatePage() {
             <SectionIntro
               label="Supporters"
               title="The mission has been carried forward by people who believed early."
-              description="This carousel is already wired to placeholder image URLs so donor portraits or logos can be dropped in later by editing the content model only."
+              description="This section acknowledges the people and institutions that have helped Brain Bristle keep the work moving."
               align="center"
               tone="inverse"
             />

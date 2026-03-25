@@ -30,7 +30,7 @@ export default function MediaPage() {
             <SectionIntro
               label="Media gallery"
               title="A visual rhythm for documentary work, conversations, and public voice."
-              description="This gallery remains placeholder-driven for now so future stills can be swapped into the content model without touching the layout."
+              description="These images connect the public-facing work to the school spaces, gatherings, and conversations that shape Brain Bristle's voice."
               align="center"
             />
           </ScrollReveal>
