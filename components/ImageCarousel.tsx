@@ -84,7 +84,7 @@ export default function ImageCarousel({
 
   return (
     <div
-      className="group relative overflow-hidden rounded-[2rem] border border-[color:var(--color-border)] bg-white/88 shadow-[0_30px_80px_rgba(16,35,63,0.1)] backdrop-blur-sm"
+      className="panel-light group relative overflow-hidden rounded-[2rem]"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       onFocusCapture={() => setIsPaused(true)}
@@ -112,7 +112,7 @@ export default function ImageCarousel({
               />
               <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(16,35,63,0.02)_0%,rgba(16,35,63,0.32)_54%,rgba(16,35,63,0.64)_100%)]" />
               <div className="absolute inset-x-0 bottom-0 p-6 sm:p-7">
-                <div className="max-w-lg rounded-[1.5rem] border border-white/14 bg-[linear-gradient(135deg,rgba(16,35,63,0.46),rgba(183,103,60,0.26))] p-4 backdrop-blur-md sm:p-5">
+                <div className="max-w-lg rounded-[1.5rem] border border-white/14 bg-[linear-gradient(135deg,rgba(21,46,76,0.58),rgba(91,147,142,0.36))] p-4 backdrop-blur-md sm:p-5">
                   <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-accent-soft)]">
                     {slide.title}
                   </p>
@@ -136,7 +136,7 @@ export default function ImageCarousel({
           <button
             type="button"
             onClick={() => goTo(activeIndex - 1)}
-            className="flex h-10 w-10 items-center justify-center rounded-full bg-[rgba(16,35,63,0.68)] text-white transition hover:bg-[var(--color-accent)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent-soft)]"
+            className="flex h-10 w-10 items-center justify-center rounded-full bg-[rgba(21,46,76,0.7)] text-white transition hover:bg-[var(--color-accent-strong)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent-soft)]"
             aria-label="Previous slide"
           >
             <ChevronLeft size={18} />
@@ -144,7 +144,7 @@ export default function ImageCarousel({
           <button
             type="button"
             onClick={() => goTo(activeIndex + 1)}
-            className="flex h-10 w-10 items-center justify-center rounded-full bg-[rgba(16,35,63,0.68)] text-white transition hover:bg-[var(--color-accent)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent-soft)]"
+            className="flex h-10 w-10 items-center justify-center rounded-full bg-[rgba(21,46,76,0.7)] text-white transition hover:bg-[var(--color-accent-strong)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent-soft)]"
             aria-label="Next slide"
           >
             <ChevronRight size={18} />

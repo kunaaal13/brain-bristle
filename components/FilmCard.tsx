@@ -6,7 +6,7 @@ interface FilmCardProps {
 
 export default function FilmCard({ title, description, videoId }: FilmCardProps) {
   return (
-    <div className="flex h-full flex-col overflow-hidden rounded-[2rem] border border-[color:var(--color-border)] bg-white shadow-[0_22px_60px_rgba(16,35,63,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_30px_80px_rgba(16,35,63,0.14)]">
+    <div className="panel-light flex h-full flex-col overflow-hidden rounded-[2rem] transition duration-300 hover:-translate-y-1">
       <div className="relative w-full bg-[var(--color-ink)] pt-[56.25%]">
         <iframe
           className="absolute top-0 left-0 w-full h-full"

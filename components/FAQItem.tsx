@@ -16,7 +16,7 @@ export default function FAQItem({ question, answer }: FAQItemProps) {
     <div className="border-b border-[color:var(--color-border)] last:border-b-0">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex w-full items-center justify-between gap-6 px-6 py-6 text-left transition duration-200 hover:bg-[rgba(216,226,219,0.24)] focus:outline-none sm:px-8"
+        className="flex w-full items-center justify-between gap-6 px-6 py-6 text-left transition duration-200 hover:bg-[rgba(160,185,163,0.14)] focus:outline-none sm:px-8"
       >
         <h3 className="pr-8 text-xl font-semibold tracking-[-0.03em] text-[var(--color-ink)]">
           {question}

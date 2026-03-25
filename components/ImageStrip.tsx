@@ -16,7 +16,7 @@ export default function ImageStrip({ items }: ImageStripProps) {
       {items.map((item) => (
         <figure
           key={item.image}
-          className="overflow-hidden rounded-[1.75rem] border border-[color:var(--color-border)] bg-white shadow-[0_20px_40px_rgba(16,35,63,0.05)]"
+          className="panel-light overflow-hidden rounded-[1.75rem]"
         >
           <div className="relative aspect-[4/3]">
             <Image

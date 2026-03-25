@@ -1,17 +1,24 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
-  --color-ink: #10233f;
-  --color-ink-soft: #243754;
-  --color-muted: #5c6778;
-  --color-surface: #f3eee6;
-  --color-surface-alt: #fbf8f3;
-  --color-sage-soft: #d8e2db;
-  --color-sage-deep: #5f786c;
-  --color-accent: #b7673c;
-  --color-accent-soft: #d2ab67;
-  --color-border: rgba(16, 35, 63, 0.12);
-  --color-border-strong: rgba(16, 35, 63, 0.24);
+  --color-navy: #152e4c;
+  --color-turquoise: #5b938e;
+  --color-off-white: #fffaf2;
+  --color-yellow: #f5ca01;
+  --color-soft-sage: #a0b9a3;
+
+  --color-ink: var(--color-navy);
+  --color-ink-soft: #284767;
+  --color-muted: #4f647a;
+  --color-surface: var(--color-off-white);
+  --color-surface-alt: #fffdf9;
+  --color-sage-soft: rgba(160, 185, 163, 0.22);
+  --color-sage-deep: var(--color-turquoise);
+  --color-accent: var(--color-yellow);
+  --color-accent-strong: #ddb600;
+  --color-accent-soft: #ffe07b;
+  --color-border: rgba(21, 46, 76, 0.12);
+  --color-border-strong: rgba(21, 46, 76, 0.26);
 
   --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
   --font-heading: var(--font-crimson-pro), ui-serif, Georgia, serif;
@@ -25,14 +32,28 @@
   body {
     min-height: 100vh;
     background:
-      radial-gradient(circle at top left, rgba(216, 226, 219, 0.55), transparent 28%),
-      linear-gradient(180deg, #f7f2eb 0%, var(--color-surface) 45%, #efe8de 100%);
+      radial-gradient(
+        circle at top left,
+        rgba(160, 185, 163, 0.22),
+        transparent 28%
+      ),
+      radial-gradient(
+        circle at top right,
+        rgba(245, 202, 1, 0.1),
+        transparent 24%
+      ),
+      linear-gradient(
+        180deg,
+        #fffdf8 0%,
+        var(--color-surface) 48%,
+        #f8f2ea 100%
+      );
     color: var(--color-ink);
     font-family: var(--font-sans);
   }
 
   ::selection {
-    background: rgba(183, 103, 60, 0.18);
+    background: rgba(245, 202, 1, 0.28);
     color: var(--color-ink);
   }
 
@@ -71,12 +92,125 @@
     position: fixed;
     inset: 0;
     pointer-events: none;
-    content: "";
+    content: '';
     background-image:
-      linear-gradient(rgba(16, 35, 63, 0.02) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(16, 35, 63, 0.02) 1px, transparent 1px);
+      linear-gradient(rgba(21, 46, 76, 0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(21, 46, 76, 0.025) 1px, transparent 1px);
     background-size: 72px 72px;
     mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), transparent 88%);
+  }
+
+  .section-editorial {
+    background: var(--color-off-white);
+    color: var(--color-ink);
+  }
+
+  .section-soft-sage {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(160, 185, 163, 0.16),
+        rgba(160, 185, 163, 0.12)
+      ),
+      var(--color-off-white);
+    color: var(--color-ink);
+  }
+
+  .section-turquoise {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(91, 147, 142, 0.12),
+        rgba(91, 147, 142, 0.08)
+      ),
+      var(--color-off-white);
+    color: var(--color-ink);
+  }
+
+  .section-navy {
+    background:
+      radial-gradient(
+        circle at top left,
+        rgba(245, 202, 1, 0.14),
+        transparent 26%
+      ),
+      radial-gradient(
+        circle at top right,
+        rgba(160, 185, 163, 0.16),
+        transparent 24%
+      ),
+      var(--color-navy);
+    color: var(--color-off-white);
+  }
+
+  .section-highlight {
+    background:
+      linear-gradient(180deg, rgba(245, 202, 1, 0.2), rgba(245, 202, 1, 0.12)),
+      var(--color-off-white);
+    color: var(--color-ink);
+  }
+
+  .panel-light {
+    border: 1px solid var(--color-border);
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 12px 30px rgba(21, 46, 76, 0.06);
+    backdrop-filter: blur(14px);
+  }
+
+  .panel-soft {
+    border: 1px solid rgba(21, 46, 76, 0.1);
+    background: rgba(255, 250, 242, 0.86);
+    box-shadow: 0 10px 26px rgba(21, 46, 76, 0.05);
+    backdrop-filter: blur(10px);
+  }
+
+  .panel-dark {
+    border: 1px solid rgba(255, 250, 242, 0.14);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0.04)
+    );
+    box-shadow: 0 16px 40px rgba(6, 18, 34, 0.18);
+    backdrop-filter: blur(16px);
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 999px;
+    padding: 0.5rem 0.9rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+  }
+
+  .eyebrow-light {
+    background: rgba(245, 202, 1, 0.18);
+    color: var(--color-navy);
+  }
+
+  .eyebrow-dark {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--color-accent-soft);
+  }
+
+  .grid-overlay {
+    position: relative;
+  }
+
+  .grid-overlay::after {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    content: '';
+    background-image:
+      linear-gradient(rgba(21, 46, 76, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(21, 46, 76, 0.04) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), transparent 92%);
   }
 }
 

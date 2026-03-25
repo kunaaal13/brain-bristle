@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
 
 export default function OurModelPage() {
-  redirect("/careers");
+  redirect("/work-with-us#fellow-journey");
 }

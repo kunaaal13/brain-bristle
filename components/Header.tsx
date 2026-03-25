@@ -14,7 +14,7 @@ export default function Header() {
   const handleLinkClick = () => setIsMobileMenuOpen(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-[color:var(--color-border)] bg-[rgba(251,248,243,0.82)] backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-[color:var(--color-border)] bg-[rgba(255,250,242,0.82)] backdrop-blur-xl">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 sm:px-8 lg:px-12">
         <div onClick={handleLinkClick}>
           <BrandMark compact />
@@ -30,7 +30,7 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="ml-2 inline-flex items-center rounded-full bg-[var(--color-ink)] px-5 py-3 text-sm font-semibold text-white transition duration-200 hover:bg-[var(--color-accent)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-4 focus-visible:ring-offset-[var(--color-surface)]"
+                  className="ml-2 inline-flex items-center rounded-full bg-[var(--color-accent)] px-5 py-3 text-sm font-semibold text-[var(--color-ink)] transition duration-200 hover:bg-[var(--color-accent-soft)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-4 focus-visible:ring-offset-[var(--color-surface)]"
                 >
                   {item.name}
                 </Link>
@@ -43,7 +43,7 @@ export default function Header() {
                 href={item.href}
                 className={`rounded-full px-4 py-2.5 text-sm font-medium transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-4 focus-visible:ring-offset-[var(--color-surface)] ${
                   isActive
-                    ? "bg-[rgba(216,226,219,0.72)] text-[var(--color-ink)]"
+                    ? "bg-[rgba(160,185,163,0.26)] text-[var(--color-ink)]"
                     : "text-[var(--color-muted)] hover:bg-white/70 hover:text-[var(--color-ink)]"
                 }`}
               >
@@ -69,7 +69,7 @@ export default function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -16 }}
             transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
-            className="border-t border-[color:var(--color-border)] bg-[rgba(251,248,243,0.97)] lg:hidden"
+            className="border-t border-[color:var(--color-border)] bg-[rgba(255,250,242,0.97)] lg:hidden"
           >
             <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-6 sm:px-8">
               {navigation.map((item, i) => {
@@ -88,9 +88,9 @@ export default function Header() {
                       onClick={handleLinkClick}
                       className={`block rounded-[1.5rem] px-5 py-4 text-lg font-medium transition duration-200 ${
                         isDonate
-                          ? "bg-[var(--color-ink)] text-white"
+                          ? "bg-[var(--color-accent)] text-[var(--color-ink)]"
                           : isActive
-                            ? "bg-[rgba(216,226,219,0.72)] text-[var(--color-ink)]"
+                            ? "bg-[rgba(160,185,163,0.26)] text-[var(--color-ink)]"
                             : "bg-white/70 text-[var(--color-ink)]"
                       }`}
                     >

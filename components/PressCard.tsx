@@ -20,7 +20,7 @@ export default function PressCard({
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="group flex h-full flex-col rounded-[2rem] border border-[color:var(--color-border)] bg-white/88 p-8 shadow-[0_22px_60px_rgba(16,35,63,0.06)] backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-[color:var(--color-border-strong)] hover:shadow-[0_30px_80px_rgba(16,35,63,0.12)]"
+      className="panel-light group flex h-full flex-col rounded-[2rem] p-8 transition duration-300 hover:-translate-y-1 hover:border-[color:var(--color-border-strong)]"
     >
       <div className="mb-auto">
         <span className="mb-5 inline-block text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-accent)]">
