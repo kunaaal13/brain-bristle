@@ -32,7 +32,7 @@ export const contentData = {
   home: {
     label: 'Autism. Inclusion. Education. Equity.',
     headline:
-      'Every child on the autism spectrum must be provided an equitable education, inclusion, and opportunity.',
+      'Every child on the autism spectrum must be provided an equitable education, inclusion and opportunity.',
     description:
       'Today in India, 1 in every 68 children between 2 and 9 years of age is reportedly diagnosed on the autism spectrum. These children are in our classrooms, neighbourhoods, and families across every corner of the country. Brain Bristle exists to make sure none of them are left behind.',
     primaryCta: { label: 'Donate', href: '/donate' },
@@ -49,100 +49,96 @@ export const contentData = {
       headline:
         'Autism numbers diagnosed are rising rapidly, and how we respond to the diagnosis today can change our tomorrow.',
       description:
-        'Our children on the autism spectrum are in our public schools, our homes, and our organisations. How we intervene becomes important.',
+        'Our children on the autism spectrum are in our public schools, our homes, our organizations, how we intervene becomes important.',
       stats: [
         {
-          value: '1 in 68',
-          label: 'children in India reportedly on the autism spectrum',
-          note: 'These children are already present in mainstream educational and family systems.',
+          emphasis: '1 in 68',
+          text: 'children in India on the Autism Spectrum',
         },
         {
-          value: '70%+',
-          label: 'in public or private affordable schools',
-          note: 'Most children are learning in the school systems least resourced for specialist support.',
+          emphasis: '70%',
+          text: 'are in our Public or Private Affordable Schools',
         },
         {
-          value: '5,500+',
-          label: 'registered special schools nationwide',
-          note: 'Many children are routed away from mainstream settings altogether.',
+          text: 'Many admitted into our 5500+ registered Special Schools',
         },
         {
-          value: 'Millions',
-          label: 'remain unsupported',
-          note: 'Many children remain under-supported or are educated at home without strong systems around them.',
+          text: 'Many remain homeschooled',
         },
       ],
       closing:
-        'With effective intervention with our masses, Brain Bristle believes millions of autism life trajectories can shift toward stronger learning, participation, and independence.',
+        'With effective intervention with our masses, we believe we can shift millions of autism life trajectories.',
       visual: {
         image: '/photos/problem-classroom.jpg',
         alt: 'Children seated together in a classroom with a Brain Bristle educator supporting from the floor',
-        title: 'Support must reach the children already in our systems',
+        title:
+          'Millions of Children on the Autism Spectrum Remain Unsupported.',
       },
     },
     why: {
-      label: 'Why Brain Bristle',
+      label: 'Why Brain Bristle?',
       headline: 'Brain Bristle means to bristle a tangled mind.',
-      description:
-        "Brain Bristle currently works with minimally supported students on the autism spectrum and with other learning difficulties in identified and select low-income Mumbai schools through direct intervention to educate and include them via trained Social Work Fellows. The organisation's work is also focused on advocacy building, community work, and awareness campaigns for the public, educators, policymakers, and families impacted by autism.",
+      paragraphs: [
+        'Brain Bristle currently works with minimally supported students on the autism spectrum & with other learning difficulties in identified and select low-income Mumbai schools through DIRECT INTERVENTION to EDUCATE & INCLUDE them into inclusion via trained Social Work Fellows.',
+        'Brain Bristle’s work is also focused on advocacy building, community work, & awareness campaigns for public, educators, policy makers & families impacted or influenced by autism',
+      ],
     },
     whatWeDo: {
       label: 'What We Do',
       headline: 'Our Work From the Ground Up',
       description:
-        "We begin work at the most important level of intervention, with children on the autism spectrum across Mumbai's low-income schools, and then build voice and awareness for what is possible when children are provided equitable education, inclusion, and support.",
+        "We begin work at the most important level of intervention, with children on the autism spectrum across Mumbai's low income schools and then build voice and awareness for what is possible when children on the autism spectrum are provided equitable education, inclusion and support.",
       items: [
         {
           title: 'Recruiting Social Work Fellows',
           description:
-            'Brain Bristle recruits Social Work Fellows from counselling, psychology, psychiatry, education, and adjacent pathways to work with students on the autism spectrum and other learning needs for a minimum of one academic year in a social work field position.',
+            'Brain Bristle recruits Social Work Fellows (students studying MA Couns.,Psychol., Psychiatry, B.Ed or on a gap year) to work with students on the autism spectrum & learning needs for a minimum of 1 academic year for a Social Work- FieldWork position.',
           image: '/photos/school-group-celebration.jpg',
           alt: 'Children and Brain Bristle team members together inside a school corridor',
         },
         {
-          title: 'Ongoing Training and Supervision',
+          title: 'Ongoing Training & Supervision',
           description:
-            'Fellows are trained throughout the year in autism, teaching, and leadership pedagogy, with additional support from partner organisations such as The Circle India U and ASB.',
+            'Social Work Fellows are trained round the year in autism, teaching and leadership pedagogy. We also partner with other organizations for their training like The Circle India U, ASB and more.',
           image: '/photos/team-planning.jpg',
           alt: 'Two Brain Bristle team members reviewing notes together during a planning session outdoors',
         },
         {
           title: 'Academic Intervention',
           description:
-            'Social Work Fellows work with Individualized Education Plans and Student Accommodation Plans to support each student toward meaningful school-based achievement goals.',
+            'Social Work Fellows work with an Individualized Education Plan (IEP) and Student Accommodation Plans (SAP) for student achievement goals for their school caseload.',
           image: '/photos/outdoor-learning.jpg',
           alt: 'Brain Bristle facilitators and children working together over learning sheets during an outdoor activity',
         },
         {
-          title: 'Advocacy and Awareness',
+          title: 'Advocacy & Awareness',
           description:
-            'Brain Bristle brings advocacy and awareness to life through ongoing research work and daily engagement with multiple stakeholders and organisations, creating visibility, dialogue, and seeds of inclusion.',
+            'We bring advocacy & awareness to life through ongoing research work and daily engagement with multiple stakeholders and organizations creating visibility, dialogue and planting seeds of inclusion.',
           image: '/photos/public-conversation.jpg',
           alt: 'A large audience gathered for a Brain Bristle public event and conversation',
         },
       ],
     },
     philosophy: {
-      label: 'Our Philosophy',
-      headline:
-        'Balanced ambition, tailored support, and optimal inclusion shape the way we think about autism.',
+      label: 'Philosophy',
+      headline: 'Our Philosophy',
       description:
-        'Brain Bristle believes support must be rigorous, context-aware, and built for the actual systems children move through every day.',
+        'Our philosophy toward autism is rooted in balanced ambition, tailored support and optimal inclusion. We believe:',
       beliefs: [
         {
           title: 'Autism is a bell curve',
           description:
-            'Symptoms and severity shift with intervention or the lack of it. Support has to respond to where a child is, and where they can grow.',
+            'Symptoms and severity shift with intervention or the lack thereof.',
         },
         {
-          title: 'Inclusive practices matter',
+          title: 'Inclusive practices',
           description:
-            'Inclusive systems have already shown that children on the autism spectrum benefit when schools, teachers, and peer environments are built to include them.',
+            'have shown to benefit students on the autism spectrum leading to worldwide movements advocating for children with ASD now attending mainstream schools.',
         },
         {
           title: 'Support is critical',
           description:
-            'Children need support to manage behaviours, stressors, academic goals, and the social and educational accommodations that make participation possible.',
+            'for managing stressors, behaviours, academic goals & helping students access social and educational opportunities & accommodations.',
         },
       ],
       visual: {
@@ -200,6 +196,16 @@ export const contentData = {
       headline: 'Sign up for our newsletter',
       description:
         "Join the mailing list for updates on field work, advocacy, research notes, and Brain Bristle's public voice around autism and inclusion.",
+    },
+    donateReference: {
+      label: 'Reference Picture for a Donation Form',
+      headline: 'Support the work through the Donate tab.',
+      description:
+        'The donation tab links directly to Milaap, where supporters can contribute to the work.',
+      cta: {
+        label: 'Go to Donate',
+        href: '/donate',
+      },
     },
     faqs: [
       {
