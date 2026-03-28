@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import FAQItem from "../../components/FAQItem";
 import PageHero from "../../components/PageHero";
 import ProfileCarousel from "../../components/ProfileCarousel";
@@ -231,43 +233,25 @@ export default function WorkWithUsPage() {
               align="center"
             />
           </ScrollReveal>
-          <div className="mt-12 grid gap-6 lg:grid-cols-3">
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
             {workWithUs.jobOpenings.roles.map((role, index) => (
               <ScrollReveal key={role.title} delay={index * 0.08}>
-                <article className="panel-light flex h-full flex-col rounded-[2rem] p-7">
-                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-sage-deep)]">
-                    Role cluster
-                  </p>
-                  <h3 className="mt-3 text-2xl font-semibold tracking-[-0.04em] text-[var(--color-ink)]">
+                <Link
+                  href={role.href}
+                  className="panel-light flex h-full flex-col rounded-[2rem] p-7 transition duration-200 hover:-translate-y-1 hover:border-[var(--color-accent-strong)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-4 focus-visible:ring-offset-[var(--color-surface)]"
+                >
+                  <h3 className="text-2xl font-semibold tracking-[-0.04em] text-[var(--color-ink)]">
                     {role.title}
                   </h3>
                   <p className="mt-4 text-base leading-8 text-[var(--color-muted)]">{role.description}</p>
-                </article>
+                  <span className="mt-auto inline-flex items-center gap-2 pt-8 text-sm font-semibold text-[var(--color-turquoise)]">
+                    {role.ctaLabel}
+                    <ArrowRight size={16} />
+                  </span>
+                </Link>
               </ScrollReveal>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="section-navy border-b border-[rgba(255,250,242,0.12)]">
-        <div className="mx-auto max-w-6xl px-6 py-20 sm:px-8 lg:px-12">
-          <ScrollReveal>
-            <div className="mx-auto max-w-4xl text-center">
-              <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[var(--color-accent-soft)]">
-                {workWithUs.application.label}
-              </p>
-              <h2 className="mt-6 text-4xl font-semibold tracking-[-0.05em] text-[var(--color-off-white)] sm:text-5xl">
-                {workWithUs.application.headline}
-              </h2>
-              <p className="mt-6 text-lg leading-8 text-white/76">{workWithUs.application.description}</p>
-              <a
-                href={workWithUs.application.cta.href}
-                className="mt-8 inline-flex items-center rounded-full bg-[var(--color-accent)] px-6 py-3.5 text-sm font-semibold text-[var(--color-ink)] transition hover:bg-[var(--color-accent-soft)]"
-              >
-                {workWithUs.application.cta.label}
-              </a>
-            </div>
-          </ScrollReveal>
         </div>
       </section>
 

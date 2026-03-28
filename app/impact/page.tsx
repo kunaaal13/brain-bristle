@@ -69,56 +69,12 @@ export default function ImpactPage() {
             {impact.pillars.map((pillar, index) => (
               <ScrollReveal key={pillar.title} delay={index * 0.08}>
                 <article className='panel-light flex h-full flex-col rounded-[2rem] p-7'>
-                  <p className='text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-sage-deep)]'>
-                    0{index + 1}
-                  </p>
-                  <h3 className='mt-3 text-2xl font-semibold tracking-[-0.04em] text-[var(--color-ink)]'>
+                  <h3 className='text-2xl font-semibold tracking-[-0.04em] text-[var(--color-ink)]'>
                     {pillar.title}
                   </h3>
                   <p className='mt-4 text-base leading-8 text-[var(--color-muted)]'>
                     {pillar.description}
                   </p>
-                </article>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className='section-soft-sage border-b border-[color:var(--color-border)]'>
-        <div className='mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12'>
-          <ScrollReveal>
-            <SectionIntro
-              label='Three Key Levers'
-              title="The organisation's impact is catalyzed through three levers that constantly inform one another."
-              description='Direct intervention, implementation systems, and shared blueprints together turn school work into wider public learning.'
-              align='center'
-            />
-          </ScrollReveal>
-          <div className='mt-12 grid gap-6 lg:grid-cols-3'>
-            {impact.levers.map((lever, index) => (
-              <ScrollReveal key={lever.title} delay={index * 0.08}>
-                <article className='panel-light flex h-full flex-col overflow-hidden rounded-[2rem]'>
-                  <div className='relative aspect-[16/11]'>
-                    <Image
-                      src={lever.image}
-                      alt={lever.alt}
-                      fill
-                      sizes='(max-width: 1024px) 100vw, 31vw'
-                      className='object-cover'
-                    />
-                  </div>
-                  <div className='flex flex-grow flex-col px-6 py-6'>
-                    <p className='text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-sage-deep)]'>
-                      Lever 0{index + 1}
-                    </p>
-                    <h3 className='mt-3 text-2xl font-semibold tracking-[-0.04em] text-[var(--color-ink)]'>
-                      {lever.title}
-                    </h3>
-                    <p className='mt-4 text-base leading-8 text-[var(--color-muted)]'>
-                      {lever.description}
-                    </p>
-                  </div>
                 </article>
               </ScrollReveal>
             ))}
@@ -149,13 +105,48 @@ export default function ImpactPage() {
         </div>
       </section>
 
+      <section className='section-soft-sage border-b border-[color:var(--color-border)]'>
+        <div className='mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12'>
+          <ScrollReveal>
+            <SectionIntro
+              label='Three Key Levers'
+              title="The organisation's impact is catalyzed through three levers that constantly inform one another."
+              description='Direct intervention, implementation systems, and shared blueprints together turn school work into wider public learning.'
+              align='center'
+            />
+          </ScrollReveal>
+          <div className='mt-12 grid gap-6 lg:grid-cols-3'>
+            {impact.levers.map((lever, index) => (
+              <ScrollReveal key={lever.title} delay={index * 0.08}>
+                <article className='panel-light flex h-full flex-col overflow-hidden rounded-[2rem]'>
+                  <div className='relative aspect-[16/11]'>
+                    <Image
+                      src={lever.image}
+                      alt={lever.alt}
+                      fill
+                      sizes='(max-width: 1024px) 100vw, 31vw'
+                      className='object-cover'
+                    />
+                  </div>
+                  <div className='flex flex-grow flex-col px-6 py-6'>
+                    <h3 className='text-2xl font-semibold tracking-[-0.04em] text-[var(--color-ink)]'>
+                      {lever.title}
+                    </h3>
+                    <p className='mt-4 text-base leading-8 text-[var(--color-muted)]'>
+                      {lever.description}
+                    </p>
+                  </div>
+                </article>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className='section-highlight'>
         <div className='mx-auto max-w-5xl px-6 py-20 text-center sm:px-8 lg:px-12'>
           <ScrollReveal>
-            <p className='text-sm font-semibold uppercase tracking-[0.3em] text-[var(--color-sage-deep)]'>
-              Closing line
-            </p>
-            <h2 className='mt-6 text-4xl font-semibold tracking-[-0.05em] text-[var(--color-ink)] sm:text-5xl'>
+            <h2 className='text-4xl font-semibold tracking-[-0.05em] text-[var(--color-ink)] sm:text-5xl'>
               {impact.closingLine}
             </h2>
           </ScrollReveal>

@@ -7,19 +7,38 @@ import Footer from '../components/Footer'
 
 const crimsonPro = Crimson_Pro({
   variable: '--font-crimson-pro',
-  subsets: ['latin'],
   display: 'swap',
 })
 
 const geist = Geist({
   variable: '--font-geist',
-  subsets: ['latin'],
   display: 'swap',
 })
 
 export const metadata: Metadata = {
-  title: siteMetadata.title,
+  metadataBase: new URL(siteMetadata.url),
+  title: {
+    default: siteMetadata.title,
+    template: `%s | ${siteMetadata.title}`,
+  },
   description: siteMetadata.description,
+  icons: {
+    icon: '/icon.svg',
+    shortcut: '/icon.svg',
+    apple: '/icon.svg',
+  },
+  openGraph: {
+    title: siteMetadata.title,
+    description: siteMetadata.description,
+    url: siteMetadata.url,
+    siteName: siteMetadata.title,
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteMetadata.title,
+    description: siteMetadata.description,
+  },
 }
 
 export default function RootLayout({

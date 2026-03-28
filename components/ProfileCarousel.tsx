@@ -84,15 +84,19 @@ export default function ProfileCarousel({
               />
             </div>
             <div className="px-6 py-6">
-              <p className={`text-xs font-semibold uppercase tracking-[0.24em] ${dark ? "text-[var(--color-accent-soft)]" : "text-[var(--color-sage-deep)]"}`}>
-                {item.role}
-              </p>
-              <h3 className={`mt-3 text-2xl font-semibold tracking-[-0.04em] ${dark ? "text-[var(--color-off-white)]" : "text-[var(--color-ink)]"}`}>
+              {item.role ? (
+                <p className={`text-xs font-semibold uppercase tracking-[0.24em] ${dark ? "text-[var(--color-accent-soft)]" : "text-[var(--color-sage-deep)]"}`}>
+                  {item.role}
+                </p>
+              ) : null}
+              <h3 className={`${item.role ? "mt-3" : ""} text-2xl font-semibold tracking-[-0.04em] ${dark ? "text-[var(--color-off-white)]" : "text-[var(--color-ink)]"}`}>
                 {item.name}
               </h3>
-              <p className={`mt-4 text-sm leading-7 ${dark ? "text-white/76" : "text-[var(--color-muted)]"}`}>
-                {item.description}
-              </p>
+              {item.description ? (
+                <p className={`mt-4 text-sm leading-7 ${dark ? "text-white/76" : "text-[var(--color-muted)]"}`}>
+                  {item.description}
+                </p>
+              ) : null}
             </div>
           </article>
         ))}

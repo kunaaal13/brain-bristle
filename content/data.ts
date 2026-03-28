@@ -209,19 +209,19 @@ export const contentData = {
     },
     faqs: [
       {
-        question: 'Where does Brain Bristle work?',
+        question: 'Where do you operate from?',
         answer:
-          'Brain Bristle works across low-income inclusive schools in Mumbai while also engaging families, educators, and audiences across India through events, writing, and advocacy.',
+          'For our direct intervention, we work directly with low income schools and communities of Mumbai. For our community work, we work virtually or out of communities where word of our work gets spread to.',
       },
       {
-        question: 'Why focus on school systems?',
+        question: 'Why does India need BrainBristle?',
         answer:
-          'Most children on the autism spectrum are already learning inside ordinary school systems. Building support there makes inclusion practical rather than theoretical.',
+          'Today 1 out of every 100, 10-year-olds tested in India on the CARS-2 is diagnosed on the spectrum of autism. We, at BrainBristle, want to ensure India understands autism.',
       },
       {
-        question: 'What does Brain Bristle provide?',
+        question: 'What does your outreach entail?',
         answer:
-          'The work combines direct intervention, training, educator partnership, caregiver guidance, advocacy, research communication, and long-form public storytelling.',
+          'Brain Bristle‘s outreach wing uses its voice to provide a thorough education into autism. We present our work at conferences, summits, events and our community work focuses on autism awareness and autism education across parts of India and beyond.',
       },
     ],
   },
@@ -234,40 +234,35 @@ export const contentData = {
     metrics: [
       {
         value: '18',
-        label: 'low-income schools',
-        note: 'Projected school footprint for 2026-27.',
+        label: 'Low Income Schools',
+        note: '',
       },
       {
         value: '80-100',
-        label: 'classrooms',
-        note: 'With 30 to 40 students in each setting.',
+        label: 'classrooms with 30-40 students in each',
+        note: '',
       },
       {
-        value: '300+',
-        label: 'high-needs students',
-        note: 'Students in direct intervention in education.',
-      },
-      {
-        value: '1 lac+',
-        label: 'people reached yearly',
-        note: 'Through advocacy and awareness spanning parent sessions, workshops, and nationwide events.',
+        value: '300 +',
+        label: 'High Needs students in Direct Intervention in Education',
+        note: '',
       },
     ],
     pillars: [
       {
         title: 'School Inclusion Program: Alag Par Ek',
         description:
-          'Brain Bristle works in direct intervention across 18 schools, supporting 300+ students daily through direct one-to-one support in 100+ classrooms to help every child with autism meet individual learning goals. This happens through its Tier 1 of work, where Social Work Fellows are trained to work at Mumbai’s low-income schools.',
+          'We work in direct intervention across 18 schools, supporting 300+ students daily through direct 1:1 support, in 100+ classrooms to help every child with autism meet their individual learning goals. We do this through our Tier 1 of work, where we train Social Work Fellows to work at Mumbai’s low income schools.',
       },
       {
         title: 'Advocacy and Awareness',
         description:
-          'From university workshops to parent sessions and nationwide events, Brain Bristle’s formal and informal advocacy spans all of India and reaches over 1 lac people per year.',
+          'From university workshops to parent sessions and nationwide events, our formal and informal advocacy spans all of India. We build voice and visibility for autism in every space that matters reaching over 1 lac people per year.',
       },
       {
         title: 'Research',
         description:
-          'More than 4,000 people follow the organisation’s research across social media, newsletters, and public learning formats, and the next phase is a dedicated research vertical grounded in on-ground work.',
+          '4,000+ people follow our research across social media. We share findings from academia, host advocacy panels, widely share our organisational newsletter and in the coming year, we are building a dedicated research vertical grounded in our work on the ground.',
       },
     ],
     levers: [
@@ -321,55 +316,35 @@ export const contentData = {
   },
   research: {
     label: 'Research',
-    headline:
-      'Our growing practice of research building is to systemize and share the work we do on the ground and build more educational and inclusive interventions from those learnings.',
+    headline: 'Research Building',
     description:
-      "Brain Bristle's research practice is growing slowly and deliberately, shaped by field learning, public translation, and the need for more credible autism knowledge in the country.",
+      'Our growing practice of Research Building is to systemize and share the work we do on the ground as well as build in educational and inclusive interventions to further share our learnings.',
     intro: {
       label: 'Research Building',
       headline:
-        'The goal is to systemize the work on the ground and turn observation into more usable systems.',
+        'Brain Bristle currently shares their work with thousands of people via their monthly newsletter, hosting advocacy and awareness panels and we are slowly growing our research blueprint for the country.',
       description:
-        'Brain Bristle currently shares its work with thousands of people through its monthly newsletter, advocacy and awareness panels, and a slowly growing research blueprint for the country.',
+        'This is the early shape of a research practice grounded in what the organisation is learning on the ground and how those learnings can be shared outward more clearly over time.',
     },
-    currentPractice: [
-      {
-        title: 'Monthly newsletters',
-        description:
-          'The monthly newsletter acts as a consistent public archive of ideas, reflections, field learning, and practical storytelling.',
-      },
-      {
-        title: 'Panels and conversations',
-        description:
-          'Advocacy and awareness panels create public entry points into autism, inclusion, and educational thinking without flattening complexity.',
-      },
-      {
-        title: 'A research blueprint in formation',
-        description:
-          'The next step is a research vertical that can hold practice notes, educational resources, and school-based learnings in a more systematic way.',
-      },
-    ],
+    currentPractice: [],
     resources: {
       label: 'Research Papers',
-      headline: 'A research archive and paper library is in progress.',
+      headline: 'Research papers and linked resources are a work in progress.',
       description:
-        'This section is being prepared as a future home for papers, field notes, educational resources, and linked research that supports the work.',
+        'This section will hold the research papers, educational resources, and linked materials that grow out of the work on the ground. For now, these remain placeholders while the research vertical is being built.',
       links: [
-        { title: 'Research archive coming soon', href: '#' },
+        { title: 'Research papers coming soon', href: '#' },
         {
-          title: 'Field notes and educational resources coming soon',
+          title: 'Educational interventions coming soon',
+          href: '#',
+        },
+        {
+          title: 'Linked resources and field notes coming soon',
           href: '#',
         },
       ],
     },
-    journal: [
-      { title: 'Brain Bristle: Parts of a Whole', date: 'March 2026' },
-      { title: 'Autism, From Then to Now', date: 'February 2026' },
-      { title: "Our Years of Schrodinger's Cat", date: 'January 2026' },
-      { title: 'Toward Abundance', date: 'November 2025' },
-      { title: 'Metres and Measures of Hard Work', date: 'October 2025' },
-      { title: 'The I Rise When We Rise Special', date: 'September 2025' },
-    ],
+    journal: [],
     visual: {
       image: '/photos/classroom-note-taking.jpg',
       alt: 'A Brain Bristle team member writing notes inside a classroom while students work in the background',
@@ -534,50 +509,48 @@ export const contentData = {
       {
         title: 'Recruitment',
         description:
-          'Brain Bristle recruits Social Work Fellows from counselling, psychology, education, psychiatry, and adjacent pathways to commit to school-based autism inclusion work for at least one academic year.',
+          "We recruit our Social Work Team Members from our country's top colleges and institutes including St Xavier's College, TISS, Sophia's College, SNDT University, NMIMS, Wadia Hospital, National College Bandra, and B.Ed colleges to work as Social Workers for 4 hours daily at a low income inclusive Mumbai school with students with ASD and high learning needs for 1 academic year. We employ them for half their days to enable them to continue learning for the rest of their time. They are paid a stipend of Rs 10,000 plus Rs 2000 for on-ground work, training and resource allocation.",
       },
       {
         title: 'Placement and Ongoing Training',
         description:
-          'Fellows are placed in low-income schools and continue receiving training, supervision, and practical learning throughout the year.',
+          "We place them in Mumbai's low income inclusive schools to work with students on the autism spectrum and other high learning needs and train them via partnerships with other organizations, adjunct faculty, and our in-house team of training leads. Our training is rooted in the philosophy of the Teacher's College Autism Program with principles and tenets of ABA.",
       },
       {
         title: 'On-Ground School Intervention',
         description:
-          'Fellows support children in classrooms, work alongside teachers, adapt materials, and help students access routines, participation, and educational goals.',
+          'Our Social Work Team works for 4 hours daily at a low income school toward inclusion via curricular and individualized educational goals met by in-class push-ins and tailored to student need pull-out sessions. With the support of high-quality trainings provided consistently our team works toward student academic and social inclusion on an ongoing basis. Our Social Work Team Leads visit schools of work daily to supervise and tailor toward best practices.',
       },
       {
         title: 'Parent Advocacy',
         description:
-          'The work continues beyond the classroom through conversations with families, behavioural guidance, and practical support for home-school continuity.',
+          'We work closely with parents to provide individualized support, caregiver training, guidance for home behaviours, behaviour protocols and support to parents to carry forward school based interventions in a home setting.',
       },
       {
-        title: 'Placement Post Fellowship',
+        title: 'Placement',
         description:
-          'The fellowship is designed to open into a wider ecosystem of schools, organisations, and roles connected to inclusion, education, and social sector practice.',
+          "We train our team through the year and actively engage with high-impact networks globally to place our social work team members in schools, organizations, corp and other NGO's across Mumbai and globally.",
       },
     ],
     jobOpenings: {
       label: 'Job Openings',
-      headline:
-        'Work With Us across organisational, field, and public-facing roles.',
+      headline: 'Explore current openings and application pathways.',
       description:
-        'The organisation needs people across multiple functions. These role clusters create the shape of the work even when current openings may change over time.',
+        'This section holds the main entry points into Brain Bristle right now: staff roles and the Social Work Fellow application pathway.',
       roles: [
         {
           title: 'Staff Roles',
           description:
-            'Programs, operations, training, communications, and research all require dependable people who can combine care with follow-through.',
-        },
-        {
-          title: 'Social Work Fellowship Roles',
-          description:
-            'Field roles are built around classroom presence, observation, relationship-building, and the stamina to work inside real school systems.',
+            'Explore organisational roles across programs, operations, training, communications, and related functions.',
+          href: '/contact',
+          ctaLabel: 'View staff roles',
         },
         {
           title: 'Social Work Fellow Applications 27-28',
           description:
-            'The Social Work Fellowship remains one of the clearest entry points into the work, especially for people committed to inclusion in low-income educational settings.',
+            'Apply to the Social Work Fellowship through the application form for the 27-28 cohort.',
+          href: 'https://forms.gle/brain-bristle-social-work-fellowship',
+          ctaLabel: 'Open application form',
         },
       ],
     },
@@ -607,37 +580,37 @@ export const contentData = {
       {
         question: 'What is the Social Work Fellow role at Brain Bristle?',
         answer:
-          'Social Work Fellows are placed in schools to support children on the autism spectrum in classrooms, work alongside teachers to enable inclusion, build social, communication, and equitable learning skills, and act as a bridge between children, teachers, and families.',
+          'Social Work Fellows are placed in schools to support children on the autism spectrum in classrooms, work alongside teachers to enable inclusion, build social, communication, and equitable learning skills in students, and act as a bridge between children, teachers, and families.',
       },
       {
         question: 'Where do Social Work Fellows work?',
         answer:
-          'Social Work Fellows work in low-income and underserved schools across Mumbai and surrounding regions, directly within classrooms and school communities.',
+          'SW Fellows work in low-income and underserved schools across Mumbai and surrounding regions, directly within classrooms and school communities.',
       },
       {
         question: 'What does a typical day for a Fellow look like?',
         answer:
-          'A Fellow may work one-to-one or in small groups with children for several hours a day, support classroom participation and routines, adapt learning materials, collaborate with teachers, and observe and document student progress.',
+          'A SW Fellow may work one-on-one or in small groups with children for 4 hours a day, support classroom participation and routines, adapt learning materials, collaborate with teachers, and observe and document student progress.',
       },
       {
         question: 'What kind of training and support do Fellows receive?',
         answer:
-          'Fellows receive training in autism and inclusive education, ongoing mentorship and supervision, exposure to classroom-based strategies and interventions, and additional training through partner organisations.',
+          'Fellows receive training in autism and inclusive education, ongoing mentorship and supervision, exposure to classroom-based strategies and interventions, and training via partner organizations.',
       },
       {
         question: 'What skills are important for a Social Work Fellow?',
         answer:
-          'Empathy, patience, strong observation, analytical thinking, comfort inside dynamic classroom environments, willingness to learn and adapt, and a serious commitment to inclusion and equity all matter.',
+          'Empathy and patience, strong observation and analytical skills, the ability to work in dynamic classroom environments, willingness to learn, experiment and adapt, and a commitment to inclusion and equity are all important.',
       },
       {
         question: 'What impact do Social Work Fellows create?',
         answer:
-          'They help children access and participate in mainstream classrooms, help teachers build inclusive practices, and help schools become more supportive and responsive to diverse learners.',
+          'They help children access and participate in mainstream classrooms, teachers build inclusive practices, and schools become more supportive and responsive to diverse learners.',
       },
       {
         question: 'Who can apply for the Fellowship?',
         answer:
-          'The role is suited to graduates or postgraduates in social work, psychology, education, or related fields who are willing to commit a few hours daily and are passionate about building inclusive systems in low-income sectors.',
+          'The role is suited for graduates or postgraduates in social work, psychology, education, or related fields willing to make a few hours of commitment daily, and for individuals passionate about working with our country’s low income sector to create inclusive systems.',
       },
       {
         question: 'Is prior experience in autism required?',
@@ -647,18 +620,18 @@ export const contentData = {
       {
         question: 'How is this role different from a typical teaching role?',
         answer:
-          'The fellowship focuses on inclusion, autism intervention, and advocacy for students rather than instruction alone. It centers on individualized educational support inside classrooms, alongside developmental and social-emotional goals.',
+          'This role focuses on inclusion, autism intervention, and advocacy for students rather than instruction alone. It centers on individualized educational programs and support within classrooms, alongside social-emotional and developmental goals as well as academics.',
       },
       {
         question:
           'What growth opportunities does the Social Work Fellowship offer?',
         answer:
-          'Fellows gain hands-on experience in grassroots inclusion and autism education, a deeper understanding of autism through research and training, opportunities to contribute to programs and advocacy, and access to a wider field network.',
+          'Fellows gain hands-on experience in grassroots inclusive and autism education, a deep understanding of autism via research, training and real classroom settings, opportunities to contribute to program design, training, and advocacy, and an opening into a large network of stakeholders in the field.',
       },
       {
         question: 'How can I apply or learn more?',
         answer:
-          "You can reach out through Brain Bristle's website or by writing to hello@brainbristle.org for the latest application and contact details.",
+          'You can reach out through Website: brainbristle.org or Email: hello@brainbristle.org.',
       },
     ],
   },
@@ -856,50 +829,32 @@ export const contentData = {
     },
     donors: [
       {
-        name: 'Mr V. Vaidynathan and Rukmani Social Welfare Trust',
-        role: 'Lead supporters',
-        description: 'Chief supporters and long-term believers in the work.',
-        image: '/placeholders/team-portrait-a.svg',
-        alt: 'Placeholder donor portrait for Mr V. Vaidynathan and Rukmani Social Welfare Trust',
+        name: 'V Vaidhyanathan',
+        role: '',
+        description: '',
+        image: '/donors/v-vaidhyanathan.webp',
+        alt: 'Portrait of donor V Vaidhyanathan',
       },
       {
-        name: 'Mr Sudhir Shenoy and Able Together',
-        role: 'Mentors and supporters',
-        description:
-          "Partners who have championed the organisation's growth and direction.",
-        image: '/placeholders/team-portrait-b.svg',
-        alt: 'Placeholder donor portrait for Mr Sudhir Shenoy and Able Together',
+        name: 'Sudhir Shenoy',
+        role: '',
+        description: '',
+        image: '/donors/sudhir-shenoy.jpg',
+        alt: 'Portrait of donor Sudhir Shenoy',
       },
       {
-        name: 'Dr and Mrs Gadodia',
-        role: 'School funding supporters',
-        description: 'Funded one low-income school for an entire year.',
-        image: '/placeholders/team-portrait-c.svg',
-        alt: 'Placeholder donor portrait for Dr and Mrs Gadodia',
+        name: 'HAB Pharmaceuticals',
+        role: '',
+        description: '',
+        image: '/donors/hab-pharmaceuticals.jpg',
+        alt: 'Image representing donor HAB Pharmaceuticals',
       },
       {
-        name: 'Inner Wheel Imperial Club of Pune',
-        role: 'Community donors',
-        description:
-          'Helped fund a quarter of the work with one Mumbai school.',
-        image: '/placeholders/team-portrait-d.svg',
-        alt: 'Placeholder donor portrait for Inner Wheel Imperial Club of Pune',
-      },
-      {
-        name: 'Gayatri Dhumatkar Agarwal',
-        role: 'School inclusion supporter',
-        description:
-          'Helped make one more low-income school inclusive in Mumbai.',
-        image: '/placeholders/team-portrait-e.svg',
-        alt: 'Placeholder donor portrait for Gayatri Dhumatkar Agarwal',
-      },
-      {
-        name: 'The Geli Family',
-        role: 'Early capacity supporters',
-        description:
-          'Provided generous seed funding to help build capacity for one social worker.',
-        image: '/placeholders/team-founder.svg',
-        alt: 'Placeholder donor portrait for the Geli Family',
+        name: 'Vinod Sharma',
+        role: '',
+        description: '',
+        image: '/donors/vinod-sharma.jpg',
+        alt: 'Portrait of donor Vinod Sharma',
       },
     ],
   },

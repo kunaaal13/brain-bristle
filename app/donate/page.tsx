@@ -93,7 +93,7 @@ export default function DonatePage() {
       </section>
 
       <section className="section-highlight border-b border-[color:var(--color-border)]">
-        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 sm:px-8 lg:grid-cols-[0.92fr_1.08fr] lg:px-12">
+        <div className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12">
           <ScrollReveal>
             <SectionIntro
               label={donate.context.label}
@@ -102,11 +102,13 @@ export default function DonatePage() {
               align="center"
             />
           </ScrollReveal>
-          <div className="grid gap-4">
+          <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             {donate.context.allocations.map((item, index) => (
               <ScrollReveal key={item} delay={index * 0.08}>
-                <div className="panel-light rounded-[1.8rem] px-5 py-5 text-base leading-8 text-[var(--color-muted)]">
-                  {item}
+                <div className="panel-light flex h-full flex-col rounded-[1.8rem] px-6 py-6">
+                  <p className="text-base leading-8 text-[var(--color-muted)]">
+                    {item}
+                  </p>
                 </div>
               </ScrollReveal>
             ))}
@@ -115,7 +117,7 @@ export default function DonatePage() {
       </section>
 
       <section className="section-soft-sage border-b border-[color:var(--color-border)]">
-        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 sm:px-8 lg:grid-cols-[0.92fr_1.08fr] lg:px-12">
+        <div className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12">
           <ScrollReveal>
             <SectionIntro
               label={donate.tax.label}
@@ -124,10 +126,10 @@ export default function DonatePage() {
               align="center"
             />
           </ScrollReveal>
-          <div className="grid gap-4">
+          <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             {donate.tax.highlights.map((item, index) => (
               <ScrollReveal key={item} delay={index * 0.08}>
-                <div className="panel-light rounded-[1.8rem] px-6 py-6">
+                <div className="panel-light flex h-full flex-col rounded-[1.8rem] px-6 py-6">
                   <p className="text-base leading-8 text-[var(--color-muted)]">{item}</p>
                 </div>
               </ScrollReveal>

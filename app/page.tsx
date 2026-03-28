@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import FAQItem from '../components/FAQItem'
 import ImageCarousel from '../components/ImageCarousel'
 import NewsletterForm from '../components/NewsletterForm'
 import PageHero from '../components/PageHero'
@@ -260,6 +261,30 @@ export default function Home() {
               />
             </ScrollReveal>
           </div>
+        </div>
+      </section>
+
+      <section className='section-soft-sage border-b border-[color:var(--color-border)]'>
+        <div className='mx-auto max-w-5xl px-6 py-20 sm:px-8 lg:px-12'>
+          <ScrollReveal>
+            <SectionIntro
+              label='FAQs'
+              title='Frequently Asked Questions'
+              description='A few common questions about where Brain Bristle works, why the work matters, and what the organisation’s outreach includes.'
+              align='center'
+            />
+          </ScrollReveal>
+          <ScrollReveal delay={0.08}>
+            <div className='panel-light mt-12 overflow-hidden rounded-[2rem]'>
+              {home.faqs.map((item) => (
+                <FAQItem
+                  key={item.question}
+                  question={item.question}
+                  answer={item.answer}
+                />
+              ))}
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
