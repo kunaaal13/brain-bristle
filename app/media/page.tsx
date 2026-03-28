@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import EventCard from "../../components/EventCard";
 import FilmCard from "../../components/FilmCard";
 import ImageStrip from "../../components/ImageStrip";
@@ -6,6 +7,12 @@ import PressCard from "../../components/PressCard";
 import ScrollReveal from "../../components/ScrollReveal";
 import SectionIntro from "../../components/SectionIntro";
 import { contentData } from "../../content/data";
+
+export const metadata: Metadata = {
+  title: "Media",
+  description:
+    "Watch Brain Bristle films, explore public events, and read press, articles, and public writing connected to autism, education, and inclusion.",
+}
 
 export default function MediaPage() {
   const { media } = contentData;

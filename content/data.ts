@@ -1,7 +1,7 @@
 export const siteMetadata = {
   title: 'Brain Bristle',
   description:
-    'Brain Bristle builds autism inclusion through school-based intervention, advocacy, research, and community work in India.',
+    'Brain Bristle builds autism inclusion in India through school-based intervention, advocacy, research, and community work.',
   url: 'https://brainbristle.org',
 }
 
@@ -47,9 +47,9 @@ export const contentData = {
     problem: {
       label: 'The Problem',
       headline:
-        'Autism diagnoses are rising rapidly, and how we respond today can change millions of futures tomorrow.',
+        'Autism numbers diagnosed are rising rapidly, and how we respond to the diagnosis today can change our tomorrow.',
       description:
-        'Our children on the autism spectrum are in our public schools, our homes, and our organisations. How we intervene, include, and support them matters deeply.',
+        'Our children on the autism spectrum are in our public schools, our homes, and our organisations. How we intervene becomes important.',
       stats: [
         {
           value: '1 in 68',
@@ -73,7 +73,7 @@ export const contentData = {
         },
       ],
       closing:
-        'With effective intervention at scale, Brain Bristle believes millions of autism life trajectories can shift toward stronger learning, participation, and independence.',
+        'With effective intervention with our masses, Brain Bristle believes millions of autism life trajectories can shift toward stronger learning, participation, and independence.',
       visual: {
         image: '/photos/problem-classroom.jpg',
         alt: 'Children seated together in a classroom with a Brain Bristle educator supporting from the floor',
@@ -84,18 +84,18 @@ export const contentData = {
       label: 'Why Brain Bristle',
       headline: 'Brain Bristle means to bristle a tangled mind.',
       description:
-        "Brain Bristle works with minimally supported students on the autism spectrum and with other learning difficulties in identified low-income Mumbai schools through direct intervention to educate and include them via trained Social Work Fellows. The organisation's work is equally focused on advocacy building, community work, and awareness campaigns for the public, educators, policymakers, and families impacted by autism.",
+        "Brain Bristle currently works with minimally supported students on the autism spectrum and with other learning difficulties in identified and select low-income Mumbai schools through direct intervention to educate and include them via trained Social Work Fellows. The organisation's work is also focused on advocacy building, community work, and awareness campaigns for the public, educators, policymakers, and families impacted by autism.",
     },
     whatWeDo: {
       label: 'What We Do',
-      headline: 'Our work moves from the ground up.',
+      headline: 'Our Work From the Ground Up',
       description:
-        "We begin with children on the autism spectrum across Mumbai's low-income schools and then build voice, awareness, and public evidence for what is possible when children receive equitable education, inclusion, and support.",
+        "We begin work at the most important level of intervention, with children on the autism spectrum across Mumbai's low-income schools, and then build voice and awareness for what is possible when children are provided equitable education, inclusion, and support.",
       items: [
         {
           title: 'Recruiting Social Work Fellows',
           description:
-            'Brain Bristle recruits Social Work Fellows from counselling, psychology, psychiatry, education, and adjacent pathways to work with students on the autism spectrum and other learning needs for at least one academic year.',
+            'Brain Bristle recruits Social Work Fellows from counselling, psychology, psychiatry, education, and adjacent pathways to work with students on the autism spectrum and other learning needs for a minimum of one academic year in a social work field position.',
           image: '/photos/school-group-celebration.jpg',
           alt: 'Children and Brain Bristle team members together inside a school corridor',
         },
@@ -116,7 +116,7 @@ export const contentData = {
         {
           title: 'Advocacy and Awareness',
           description:
-            'Brain Bristle brings advocacy to life through research, communication, events, and daily engagement with multiple stakeholders and organisations shaping inclusion in India.',
+            'Brain Bristle brings advocacy and awareness to life through ongoing research work and daily engagement with multiple stakeholders and organisations, creating visibility, dialogue, and seeds of inclusion.',
           image: '/photos/public-conversation.jpg',
           alt: 'A large audience gathered for a Brain Bristle public event and conversation',
         },
@@ -199,7 +199,7 @@ export const contentData = {
       label: 'Newsletter',
       headline: 'Sign up for our newsletter',
       description:
-        "Join the mailing list for updates on field work, events, research notes, and Brain Bristle's public voice around autism and inclusion.",
+        "Join the mailing list for updates on field work, advocacy, research notes, and Brain Bristle's public voice around autism and inclusion.",
     },
     faqs: [
       {
@@ -222,9 +222,9 @@ export const contentData = {
   impact: {
     label: 'Impact',
     headline:
-      'Impact is measured in changed classrooms, stronger school systems, and more visible autism advocacy.',
+      'Impact is measured in changed classrooms, stronger school systems, and more visible autism advocacy across the country.',
     description:
-      'The 2026-27 impact frame is intentionally concrete: more schools, more classrooms, more direct student support, and wider public understanding shaped by practice.',
+      'The 2026-27 impact frame is intentionally concrete: more schools, more classrooms, more direct intervention in education, and wider public understanding shaped by practice.',
     metrics: [
       {
         value: '18',
@@ -239,24 +239,29 @@ export const contentData = {
       {
         value: '300+',
         label: 'high-needs students',
-        note: 'Students in direct intervention for educational support.',
+        note: 'Students in direct intervention in education.',
+      },
+      {
+        value: '1 lac+',
+        label: 'people reached yearly',
+        note: 'Through advocacy and awareness spanning parent sessions, workshops, and nationwide events.',
       },
     ],
     pillars: [
       {
         title: 'School Inclusion Program: Alag Par Ek',
         description:
-          'Brain Bristle works in direct intervention across 18 schools, supporting 300+ students daily through one-to-one support in 100+ classrooms to help every child meet individual learning goals.',
+          'Brain Bristle works in direct intervention across 18 schools, supporting 300+ students daily through direct one-to-one support in 100+ classrooms to help every child with autism meet individual learning goals. This happens through its Tier 1 of work, where Social Work Fellows are trained to work at Mumbai’s low-income schools.',
       },
       {
         title: 'Advocacy and Awareness',
         description:
-          'From university workshops to parent sessions and nationwide events, Brain Bristle builds voice and visibility for autism in every space that matters.',
+          'From university workshops to parent sessions and nationwide events, Brain Bristle’s formal and informal advocacy spans all of India and reaches over 1 lac people per year.',
       },
       {
         title: 'Research',
         description:
-          "More than 4,000 people follow the organisation's research-facing communication, and the next phase is a dedicated research vertical grounded in on-ground work.",
+          'More than 4,000 people follow the organisation’s research across social media, newsletters, and public learning formats, and the next phase is a dedicated research vertical grounded in on-ground work.',
       },
     ],
     levers: [
@@ -311,21 +316,21 @@ export const contentData = {
   research: {
     label: 'Research',
     headline:
-      'Research building is the practice of systemizing and sharing what the work on the ground is already teaching us.',
+      'Our growing practice of research building is to systemize and share the work we do on the ground and build more educational and inclusive interventions from those learnings.',
     description:
       "Brain Bristle's research practice is growing slowly and deliberately, shaped by field learning, public translation, and the need for more credible autism knowledge in the country.",
     intro: {
       label: 'Research Building',
       headline:
-        'The goal is to turn observation into language, and language into more usable systems.',
+        'The goal is to systemize the work on the ground and turn observation into more usable systems.',
       description:
-        'Brain Bristle shares work with thousands of people through its monthly newsletter, public advocacy conversations, and a growing blueprint for educational and inclusive intervention.',
+        'Brain Bristle currently shares its work with thousands of people through its monthly newsletter, advocacy and awareness panels, and a slowly growing research blueprint for the country.',
     },
     currentPractice: [
       {
         title: 'Monthly newsletters',
         description:
-          'The newsletter acts as a consistent public archive of ideas, reflections, field learning, and practical storytelling.',
+          'The monthly newsletter acts as a consistent public archive of ideas, reflections, field learning, and practical storytelling.',
       },
       {
         title: 'Panels and conversations',
@@ -335,7 +340,7 @@ export const contentData = {
       {
         title: 'A research blueprint in formation',
         description:
-          'The next step is a research vertical that can hold practice notes, resources, and school-based learnings in a more systematic way.',
+          'The next step is a research vertical that can hold practice notes, educational resources, and school-based learnings in a more systematic way.',
       },
     ],
     resources: {
@@ -376,7 +381,7 @@ export const contentData = {
       headline:
         'The organisation is held together by multiple working groups and a shared field-facing ethic.',
       description:
-        'The organisation runs through school work, training, operations, communications, and research, all held together by people working closely across contexts.',
+        'The work is carried by a small team across leadership, training, communications, partnerships, and recruitment, with each role helping build more durable systems for inclusion.',
       photos: [
         {
           image: '/photos/team-planning.jpg',
@@ -389,78 +394,92 @@ export const contentData = {
           label: 'Workshops, readings, and collaborative learning remain part of the organisation’s internal rhythm.',
         },
       ],
+      founder: {
+        name: 'Devangana Mishra',
+        role: 'Founder',
+        image: '/team/devangana-mishra.jpeg',
+        alt: 'Portrait of Devangana Mishra, founder of Brain Bristle',
+        summary:
+          'Devangana Mishra has spent the past 17 years building education, curriculum, equity, and inclusion for individuals on the autism spectrum and those with other learning needs across multiple geographies and systems.',
+        bio: [
+          'She holds a Master’s degree in Autism and Intellectual Disabilities from Teachers College, Columbia University, where she received the Elise Todden Scholarship and was a Fellow with the Opportunities and Outcomes Department.',
+          'Since then, she has worked across private schools and organisations in New York, Indonesia, New Delhi, Hong Kong, and Mumbai. She is also a writer and artist, and spends her free hours with her family, friends, and her cat, Mari.',
+        ],
+      },
       groups: [
         {
-          title: 'Staff',
-          people: [
-            {
-              name: 'Staff profile forthcoming',
-              role: 'Programs and operations',
-              summary:
-                'Programs and operations hold together the daily movement between school delivery, coordination, follow-through, and organisational reliability.',
-              image: '/photos/problem-classroom.jpg',
-            },
-          ],
-        },
-        {
-          title: 'Board',
-          people: [
-            {
-              name: 'Board profile forthcoming',
-              role: 'Advisory and governance',
-              summary:
-                'Board and advisory support help the organisation think long-term about stewardship, governance, and the conditions needed for sustainable growth.',
-              image: '/photos/workshop-reading.jpg',
-            },
-          ],
-        },
-        {
-          title: 'Leadership',
-          people: [
-            {
-              name: 'Leadership profile forthcoming',
-              role: 'Strategy and direction',
-              summary:
-                'Leadership shapes the broader direction of the work, from school partnerships and systems thinking to public voice and long-range organisational priorities.',
-              image: '/photos/school-group-celebration.jpg',
-            },
-          ],
-        },
-        {
           title: 'Training Team',
+          description:
+            'The training team grounds the fellowship in evidence-based practice, ethical support, and close supervision.',
           people: [
             {
-              name: 'Training profile forthcoming',
-              role: 'Training and supervision',
+              name: 'Ishika Jain',
+              role: 'Qualified Behaviour Analyst',
               summary:
-                'Training teams build the reflective and practical structures that help fellows stay supported, supervised, and better equipped in the field.',
-              image: '/photos/team-planning.jpg',
+                'Ishika is a Qualified Behaviour Analyst with advanced training in Applied Behaviour Analysis. She has experience supporting children and adolescents with diverse developmental, behavioural, and learning needs across educational and clinical settings through school-based intervention, multidisciplinary collaboration, caregiver guidance, and individualized behaviour and skill-building programs.',
+              image: '/team/ishika-jain.jpeg',
+              alt: 'Portrait of Ishika Jain',
+            },
+            {
+              name: 'Alisha Ganguly',
+              role: 'Behaviour Therapist and Mental Health Professional',
+              summary:
+                'Alisha is a behaviour therapist and mental health professional with experience across Applied Behavior Analysis, clinical psychology, and social service settings. She has worked closely with children and adults from diverse backgrounds and holds a Master’s degree in Clinical Psychology from Mumbai University along with postgraduate certifications in Autism and Behavioural Sciences and in Addictions: Treatment and Prevention from Canada.',
+              image: '/team/alisha-ganguly.jpeg',
+              alt: 'Portrait of Alisha Ganguly',
             },
           ],
         },
         {
           title: 'Communications',
+          description:
+            "Communications and partnerships help Brain Bristle shape public narratives, build visibility, and create stronger bridges between the work and the audiences it needs to reach.",
           people: [
             {
-              name: 'Communications profile forthcoming',
-              role: 'Public voice and storytelling',
+              name: 'Samruddhi Bora',
+              role: 'Partnerships and Public Affairs',
               summary:
-                "Communications carries the organisation's public voice through events, writing, campaigns, and the language used to make autism more legible to wider audiences.",
-              image: '/photos/public-conversation.jpg',
+                'Samruddhi works in partnerships and public affairs, with a focus on strategic communication, brand positioning, and relationship-led growth. Her work is rooted in building meaningful collaborations, shaping public narratives, and creating visibility through thoughtful media and partnership strategies.',
+              image: '/team/samruddhi-bora.jpeg',
+              alt: 'Portrait of Samruddhi Bora',
+            },
+            {
+              name: 'Vani Mishra',
+              role: 'Partnerships Associate',
+              summary:
+                'Vani works as a Partnerships Associate at Brain Bristle, where she focuses on building collaborations with schools, colleges, media platforms, and organisations to expand awareness around autism and inclusive education through expert talks, workshops, media collaborations, and awareness initiatives.',
+              image: '/team/vani-mishra.jpeg',
+              alt: 'Portrait of Vani Mishra',
+            },
+            {
+              name: 'Sarah Thakur',
+              role: 'Public Relations',
+              summary:
+                'Sarah holds a diploma in Public Relations from the Xavier Institute of Communications and brings over four years of PR experience across tech, lifestyle, and travel. Her work spans content writing, media outreach, reporting, and campaign ideation, and reflects an ongoing commitment to leadership and community engagement.',
+              image: '/team/sarah-thakur.jpg',
+              alt: 'Portrait of Sarah Thakur',
+            },
+            {
+              name: 'Rhea Sumit Rane',
+              role: 'Communications Associate',
+              summary:
+                'Rhea works as a Communications Associate at Brain Bristle, weaving together content, strategy, and storytelling to build awareness around autism and inclusive education. With a background in political science, international relations, and nonprofit communications, she helps shape digital outreach and campaigns that make social impact work feel more human.',
+              image: '/team/rhea-sumit-rane.jpeg',
+              alt: 'Portrait of Rhea Sumit Rane',
             },
           ],
         },
+      ],
+      notes: [
+        {
+          title: 'HR & Finance',
+          description:
+            'Shubham Kure currently supports Social Work Fellowship recruitment as part of the organisational backbone around hiring, administration, finance, and team continuity.',
+        },
         {
           title: 'Research',
-          people: [
-            {
-              name: 'Research profile forthcoming',
-              role: 'Research and knowledge work',
-              summary:
-                'Research and knowledge work turn field observations into documentation, reflection, and public resources that can support educators, families, and collaborators.',
-              image: '/photos/classroom-note-taking.jpg',
-            },
-          ],
+          description:
+            'The research team section will remain blank for now while that vertical is still being shaped.',
         },
       ],
     },
@@ -469,37 +488,37 @@ export const contentData = {
       headline:
         "Social Work Fellows form the field-facing core of the organisation's school work.",
       description:
-        'These images show the kinds of field contexts fellows move through: classroom presence, guided learning, careful observation, and team support.',
+        'Social Work Fellows form the field-facing core of the organisation’s school work, and this section holds the place for the 2026-27 fellow cohort.',
       items: [
         {
-          name: 'Classroom presence',
-          role: 'School-based support',
+          name: 'Fellow profile 01',
+          role: 'Social Work Fellow',
           description:
-            'Fellows work within existing school spaces, helping children access routine, participation, and learning without being pulled away from the classroom.',
+            'Placeholder slot for a future fellow profile, name, and image from the 2026-27 cohort.',
           image: '/photos/problem-classroom.jpg',
           alt: 'Children seated in a classroom with a Brain Bristle educator supporting nearby',
         },
         {
-          name: 'Guided small-group work',
-          role: 'Direct intervention',
+          name: 'Fellow profile 02',
+          role: 'Social Work Fellow',
           description:
-            'A fellow’s day often includes structured one-to-one or small-group activities that help children engage with learning goals in more workable ways.',
+            'Placeholder slot for a future fellow profile, name, and image from the 2026-27 cohort.',
           image: '/photos/outdoor-learning.jpg',
           alt: 'Children and facilitators seated together around learning sheets during a guided activity',
         },
         {
-          name: 'Observation and documentation',
-          role: 'Learning closely',
+          name: 'Fellow profile 03',
+          role: 'Social Work Fellow',
           description:
-            'The work also depends on note-taking, observation, and a close understanding of what a child needs in order to stay included and supported.',
+            'Placeholder slot for a future fellow profile, name, and image from the 2026-27 cohort.',
           image: '/photos/classroom-note-taking.jpg',
           alt: 'A Brain Bristle team member writing notes in a classroom while students work in the background',
         },
         {
-          name: 'Team supervision',
-          role: 'Training and support',
+          name: 'Fellow profile 04',
+          role: 'Social Work Fellow',
           description:
-            'Fellows are sustained through planning, supervision, and regular learning spaces that help the work stay thoughtful over time.',
+            'Placeholder slot for a future fellow profile, name, and image from the 2026-27 cohort.',
           image: '/photos/team-planning.jpg',
           alt: 'Two Brain Bristle team members sitting outdoors with notes spread beside them',
         },
@@ -545,7 +564,7 @@ export const contentData = {
             'Programs, operations, training, communications, and research all require dependable people who can combine care with follow-through.',
         },
         {
-          title: 'Field Roles',
+          title: 'Social Work Fellowship Roles',
           description:
             'Field roles are built around classroom presence, observation, relationship-building, and the stamina to work inside real school systems.',
         },
@@ -559,7 +578,7 @@ export const contentData = {
     application: {
       label: 'Applications',
       headline:
-        'Applications for the 2027-28 Social Work Fellowship should feel accessible, serious, and easy to find.',
+        'Social Work Fellow Applications 27-28 should feel accessible, serious, and easy to find.',
       description:
         'This CTA block is designed for a future external form link. Until then, Brain Bristle can route enquiries and early applications through email.',
       cta: {
@@ -778,29 +797,51 @@ export const contentData = {
     label: 'Donate',
     headline: 'Alag Par Ek: #Make-A-School-Autism-Inclusive',
     description:
-      "Your contribution can help make more low-income schools inclusive, equitable, and accessible for autistic and special-needs students while also strengthening Brain Bristle's voice and research capacity.",
+      'Your contribution can help make more low-income schools inclusive, academically and socially, for autistic and special-needs students while also helping Brain Bristle grow its voice and build research for the country.',
     cta: {
       label: 'Donate now',
-      href: 'mailto:hello@brainbristle.org?subject=Donate%20to%20Brain%20Bristle',
+      href: 'https://milaap.org/fundraisers/brain-bristle',
+    },
+    options: {
+      label: 'Ways to Give',
+      headline: 'Choose a monthly or one-time way to support the work.',
+      description:
+        'This section helps supporters understand that they can give regularly or make a one-time contribution, while still keeping the overall page simple and campaign-led.',
+      monthly: {
+        title: 'Monthly Donation',
+        amounts: ['$3 / month', '$5 / month', '$7 / month', '$10 / month', '$25 / month'],
+        cta: {
+          label: 'Start now',
+          href: 'https://milaap.org/fundraisers/brain-bristle?frequency=monthly',
+        },
+      },
+      oneTime: {
+        title: 'One-Time Donation',
+        description:
+          'You can also become a spontaneous supporter with a one-time donation in any amount.',
+        cta: {
+          label: 'Give now',
+          href: 'https://milaap.org/fundraisers/brain-bristle?frequency=once',
+        },
+      },
     },
     context: {
       label: 'What your support enables',
       headline:
-        'Giving supports direct school work, systems building, and the public voice required to sustain both.',
+        'We need your support to reach the goals that keep this work moving.',
       description:
-        'Brain Bristle needs support to help more low-income schools become inclusive, to grow its work and voice, and to build research grounded in the realities of the country.',
+        'Brain Bristle was born from the knowledge that today in India a significant number of children are diagnosed on the autism spectrum while most remain inside ordinary public, affordable private, or special-school systems. We began with one question: who is supporting these students in our low-income schools? Your contribution can make a difference.',
       allocations: [
-        'Help make more low-income schools inclusive, equitable, and accessible for autistic and special-needs students.',
-        'Help Brain Bristle grow its voice and work publicly and nationally.',
-        'Help build research and documentation that are useful for the country and grounded in on-ground realities.',
-        'Support on-ground spending in line with the objectives of the organisation.',
+        'Help make more low-income schools inclusive, academically and socially, for autistic and special-needs students.',
+        'Help Brain Bristle grow its voice and work globally.',
+        'Help build research for the country.',
       ],
     },
     tax: {
       label: 'Tax and Giving',
-      headline: 'Giving should feel clear, compliant, and easy to act on.',
+      headline: 'Your contribution should feel clear, compliant, and easy to act on.',
       description:
-        'Your donation will be eligible for tax exemption under Section 80G of the Income Tax Act, 1961. All donations will be utilised as per on-ground needs and in line with the objectives of the organisation.',
+        'Your donation will be eligible for tax exemption under Section 80G of the Income Tax Act, 1961. All donations will be utilised as per needs on-ground, in line with the objectives of the organisation.',
       highlights: [
         'Eligible for tax exemption under Section 80G of the Income Tax Act, 1961.',
         'Donations are directed toward on-ground work and organisational objectives.',

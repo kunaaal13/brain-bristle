@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import ImageCarousel from '../../components/ImageCarousel'
 import MetricCard from '../../components/MetricCard'
@@ -5,6 +6,12 @@ import PageHero from '../../components/PageHero'
 import ScrollReveal from '../../components/ScrollReveal'
 import SectionIntro from '../../components/SectionIntro'
 import { contentData } from '../../content/data'
+
+export const metadata: Metadata = {
+  title: 'Impact',
+  description:
+    'See how Brain Bristle measures impact across low-income schools, classrooms, direct intervention, advocacy, and research in India.',
+}
 
 export default function ImpactPage() {
   const { impact } = contentData
@@ -27,9 +34,9 @@ export default function ImpactPage() {
         <div className='mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12'>
           <ScrollReveal>
             <SectionIntro
-              label='2026-27 Outlook'
-              title='The impact frame is specific enough to be understood and judged.'
-              description='The goals are visible in the number of schools, classrooms, students, and people reached through advocacy.'
+              label='2026-27'
+              title='The impact frame is concrete: more schools, more classrooms, more direct intervention, and wider public understanding.'
+              description='The goals are visible in the number of schools, classrooms, students, and people reached through advocacy and awareness.'
               align='center'
               tone='inverse'
             />
@@ -54,7 +61,7 @@ export default function ImpactPage() {
             <SectionIntro
               label='Impact Pillars'
               title='Three connected ways the organisation changes outcomes.'
-              description='School intervention, advocacy, and research should reinforce each other instead of operating as isolated tracks.'
+              description='School intervention, advocacy and awareness, and research should reinforce each other instead of operating as isolated tracks.'
               align='center'
             />
           </ScrollReveal>

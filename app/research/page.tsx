@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
@@ -5,6 +6,12 @@ import PageHero from "../../components/PageHero";
 import ScrollReveal from "../../components/ScrollReveal";
 import SectionIntro from "../../components/SectionIntro";
 import { contentData } from "../../content/data";
+
+export const metadata: Metadata = {
+  title: "Research",
+  description:
+    "Explore Brain Bristle's research-building practice, monthly newsletters, and the growing archive of autism and inclusion learnings from the ground.",
+}
 
 export default function ResearchPage() {
   const { research } = contentData;
@@ -105,7 +112,7 @@ export default function ResearchPage() {
           <ScrollReveal>
             <SectionIntro
               label="Monthly Newsletters"
-              title="Existing newsletters already show the tone and direction of the knowledge work."
+              title="Our monthly newsletters are the clearest public archive of the research-building practice so far."
               description="These pieces sit at the intersection of reflection, advocacy, and research translation."
               align="center"
             />
@@ -132,16 +139,16 @@ export default function ResearchPage() {
           <ScrollReveal>
             <div className="mx-auto max-w-4xl text-center">
               <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[var(--color-accent-soft)]">
-                Research and public voice
+                Research building
               </p>
               <h2 className="mt-6 text-4xl font-semibold tracking-[-0.05em] text-[var(--color-off-white)] sm:text-5xl">
                 Research building here is designed to stay useful to educators, families, and collaborators.
               </h2>
               <Link
-                href="/media#press"
+                href="/media"
                 className="mt-8 inline-flex items-center gap-2 rounded-full border border-white/18 bg-white/8 px-5 py-3 text-sm font-medium text-[var(--color-off-white)] transition hover:border-[var(--color-accent-soft)] hover:text-[var(--color-accent-soft)]"
               >
-                Explore public writing
+                Explore Media
                 <ArrowRight size={16} />
               </Link>
             </div>

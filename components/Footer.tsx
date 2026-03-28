@@ -12,9 +12,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-16 sm:px-8 lg:px-12">
         <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr_0.9fr_1fr]">
           <div>
-            <div className="[&_a]:text-white [&_span:last-child]:text-white/55">
-              <BrandMark />
-            </div>
+            <BrandMark tone="inverse" />
             <p className="mt-6 max-w-md text-sm leading-7 text-white/72">
               Brain Bristle builds autism inclusion through school-based intervention, educator partnership, public advocacy, and emerging research grounded in practice.
             </p>
@@ -54,9 +52,6 @@ export default function Footer() {
               <p>{contentData.contact.hours}</p>
               <a href={`mailto:${contentData.contact.email}`} className="block transition duration-200 hover:text-white">
                 {contentData.contact.email}
-              </a>
-              <a href={`mailto:${contentData.contact.founderEmail}`} className="block transition duration-200 hover:text-white">
-                {contentData.contact.founderEmail}
               </a>
             </div>
           </div>

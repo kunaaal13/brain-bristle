@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import FAQItem from "../../components/FAQItem";
 import PageHero from "../../components/PageHero";
@@ -5,6 +6,12 @@ import ProfileCarousel from "../../components/ProfileCarousel";
 import ScrollReveal from "../../components/ScrollReveal";
 import SectionIntro from "../../components/SectionIntro";
 import { contentData } from "../../content/data";
+
+export const metadata: Metadata = {
+  title: "Work With Us",
+  description:
+    "Meet the Brain Bristle team, learn about the Social Work Fellowship, explore openings, and understand how the organisation builds inclusion from the ground up.",
+}
 
 export default function WorkWithUsPage() {
   const { workWithUs } = contentData;
@@ -38,7 +45,7 @@ export default function WorkWithUsPage() {
             {workWithUs.team.photos.map((photo, index) => (
               <ScrollReveal key={photo.image} delay={index * 0.08}>
                 <div className="panel-light flex h-full flex-col overflow-hidden rounded-[2rem]">
-                  <div className="relative aspect-[16/10]">
+                  <div className="relative h-[15rem] sm:h-[17rem] lg:h-[18.5rem]">
                     <Image
                       src={photo.image}
                       alt={photo.alt}
@@ -55,30 +62,109 @@ export default function WorkWithUsPage() {
             ))}
           </div>
 
-          <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <ScrollReveal delay={0.08}>
+            <article className="panel-light mt-12 overflow-hidden rounded-[2.4rem]">
+              <div className="grid items-stretch lg:grid-cols-[0.82fr_1.18fr]">
+                <div className="relative min-h-[24rem]">
+                  <Image
+                    src={workWithUs.team.founder.image}
+                    alt={workWithUs.team.founder.alt}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 40vw"
+                    className="object-cover object-top"
+                  />
+                </div>
+                <div className="flex flex-col justify-center px-6 py-8 sm:px-8 sm:py-10 lg:px-10">
+                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-sage-deep)]">
+                    Leadership
+                  </p>
+                  <h3 className="mt-3 text-3xl font-semibold tracking-[-0.05em] text-[var(--color-ink)] sm:text-4xl">
+                    {workWithUs.team.founder.name}
+                  </h3>
+                  <p className="mt-3 text-sm font-semibold uppercase tracking-[0.18em] text-[var(--color-turquoise)]">
+                    {workWithUs.team.founder.role}
+                  </p>
+                  <p className="mt-6 text-base leading-8 text-[var(--color-muted)]">
+                    {workWithUs.team.founder.summary}
+                  </p>
+                  <div className="mt-6 space-y-4 text-sm leading-7 text-[var(--color-muted)] sm:text-base sm:leading-8">
+                    {workWithUs.team.founder.bio.map((paragraph) => (
+                      <p key={paragraph}>{paragraph}</p>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </article>
+          </ScrollReveal>
+
+          <div className="mt-16 space-y-16">
             {workWithUs.team.groups.map((group, index) => (
               <ScrollReveal key={group.title} delay={index * 0.06}>
-                <article className="panel-light flex h-full flex-col overflow-hidden rounded-[2rem]">
-                  <div className="relative aspect-[16/10]">
-                    <Image
-                      src={group.people[0].image}
-                      alt={`Visual supporting ${group.title} at Brain Bristle`}
-                      fill
-                      sizes="(max-width: 1024px) 100vw, 32vw"
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="flex flex-grow flex-col px-6 py-6">
-                    <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-sage-deep)]">
-                      {group.people[0].role}
+                <div>
+                  <div className="mx-auto max-w-3xl text-center">
+                    <p className="text-xs font-semibold uppercase tracking-[0.26em] text-[var(--color-sage-deep)]">
+                      Team group
                     </p>
-                    <h3 className="mt-3 text-2xl font-semibold tracking-[-0.04em] text-[var(--color-ink)]">
+                    <h3 className="mt-4 text-3xl font-semibold tracking-[-0.05em] text-[var(--color-ink)] sm:text-4xl">
                       {group.title}
                     </h3>
-                    <p className="mt-4 text-sm leading-7 text-[var(--color-muted)]">
-                      {group.people[0].summary}
+                    <p className="mt-4 text-base leading-8 text-[var(--color-muted)]">
+                      {group.description}
                     </p>
                   </div>
+                  <div
+                    className={`mt-10 grid gap-6 ${
+                      group.title === "Communications"
+                        ? "md:grid-cols-2"
+                        : "lg:grid-cols-2"
+                    }`}
+                  >
+                    {group.people.map((person) => (
+                      <article
+                        key={person.name}
+                        className="panel-light flex h-full flex-col overflow-hidden rounded-[2rem]"
+                      >
+                        <div className="relative h-[18rem] sm:h-[20rem]">
+                          <Image
+                            src={person.image}
+                            alt={person.alt}
+                            fill
+                            sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 25vw"
+                            className="object-cover object-top"
+                          />
+                        </div>
+                        <div className="flex flex-grow flex-col px-6 py-6">
+                          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-sage-deep)]">
+                            {person.role}
+                          </p>
+                          <h4 className="mt-3 text-2xl font-semibold tracking-[-0.04em] text-[var(--color-ink)]">
+                            {person.name}
+                          </h4>
+                          <p className="mt-4 text-sm leading-7 text-[var(--color-muted)]">
+                            {person.summary}
+                          </p>
+                        </div>
+                      </article>
+                    ))}
+                  </div>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+
+          <div className="mt-16 grid gap-6 md:grid-cols-2">
+            {workWithUs.team.notes.map((note, index) => (
+              <ScrollReveal key={note.title} delay={index * 0.08}>
+                <article className="panel-light flex h-full flex-col rounded-[2rem] p-7">
+                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-sage-deep)]">
+                    Team note
+                  </p>
+                  <h3 className="mt-3 text-2xl font-semibold tracking-[-0.04em] text-[var(--color-ink)]">
+                    {note.title}
+                  </h3>
+                  <p className="mt-4 text-base leading-8 text-[var(--color-muted)]">
+                    {note.description}
+                  </p>
                 </article>
               </ScrollReveal>
             ))}

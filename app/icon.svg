@@ -1,0 +1,64 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="256" y1="20" x2="256" y2="492" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F9D73F"/>
+      <stop offset="1" stop-color="#F5CA01"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="256" y1="20" x2="256" y2="492" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="circleClip">
+      <circle cx="256" cy="256" r="236"/>
+    </clipPath>
+  </defs>
+
+  <circle cx="256" cy="256" r="236" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="236" fill="url(#glow)"/>
+  <circle cx="256" cy="256" r="235" stroke="#E0BA07" stroke-width="2"/>
+
+  <g clip-path="url(#circleClip)">
+    <g opacity="0.16" stroke="#FFF7D0" stroke-width="2">
+      <path d="M24 332H488"/>
+      <path d="M24 302H488"/>
+      <path d="M24 272H488"/>
+      <path d="M24 242H488"/>
+      <path d="M24 212H488"/>
+      <path d="M24 182H488"/>
+      <path d="M24 152H488"/>
+      <path d="M24 122H488"/>
+    </g>
+    <g opacity="0.1" stroke="#FFF7D0" stroke-width="1.5">
+      <path d="M294 470V158"/>
+      <path d="M308 470V158"/>
+      <path d="M322 470V158"/>
+      <path d="M336 470V158"/>
+      <path d="M350 470V158"/>
+      <path d="M364 470V158"/>
+      <path d="M378 470V158"/>
+      <path d="M392 470V158"/>
+      <path d="M406 470V158"/>
+      <path d="M420 470V158"/>
+      <path d="M434 470V158"/>
+    </g>
+  </g>
+
+  <g fill="#232323">
+    <rect x="86" y="116" width="78" height="58" rx="11"/>
+    <rect x="86" y="199" width="78" height="58" rx="11"/>
+    <rect x="86" y="282" width="78" height="58" rx="11"/>
+    <rect x="86" y="365" width="78" height="58" rx="11"/>
+  </g>
+  <g fill="#FAFAFA" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700">
+    <text x="107" y="155">1.</text>
+    <text x="107" y="238">2.</text>
+    <text x="107" y="321">3.</text>
+    <text x="107" y="404">4.</text>
+  </g>
+
+  <g fill="#232323">
+    <text x="282" y="430" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" letter-spacing="0.45">BRAIN BRISTLE</text>
+    <path d="M441 420C441 409.22 447.93 400.5 457.78 400.5C457.08 406.64 454.62 411.62 451.13 415.89C448.51 419.1 445.94 422.18 444.7 426.51C444.05 428.79 443.91 431.27 443.91 433.65V441.35H437.4V428C437.4 424.82 438.47 422.22 441 420Z"/>
+    <path d="M453.39 441.35V422.22C453.39 416.58 456.3 412.89 461.39 412.89C461.39 417.71 459.92 421.32 457.84 424.27C456.44 426.27 455.82 428.5 455.82 430.94V441.35H453.39Z"/>
+  </g>
+</svg>
