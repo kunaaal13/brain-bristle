@@ -8,11 +8,13 @@ import Footer from '../components/Footer'
 const crimsonPro = Crimson_Pro({
   variable: '--font-crimson-pro',
   display: 'swap',
+  subsets: ['latin'],
 })
 
 const geist = Geist({
   variable: '--font-geist',
   display: 'swap',
+  subsets: ['latin'],
 })
 
 export const metadata: Metadata = {
