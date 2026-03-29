@@ -66,11 +66,14 @@ export default function PageHero({
             <div className={`mt-10 flex flex-col gap-4 sm:flex-row ${isCentered ? "justify-center" : ""}`}>
               {actions.map((action) => {
                 const isPrimary = action.variant !== "secondary";
+                const isExternal = action.href.startsWith("http");
 
                 return (
                   <Link
                     key={`${action.href}-${action.label}`}
                     href={action.href}
+                    target={isExternal ? "_blank" : undefined}
+                    rel={isExternal ? "noopener noreferrer" : undefined}
                     className={`inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-4 focus-visible:ring-offset-[var(--color-surface)] ${
                       isPrimary
                         ? "bg-[var(--color-accent)] text-[var(--color-ink)] hover:bg-[var(--color-accent-soft)]"

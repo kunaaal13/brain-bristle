@@ -111,7 +111,7 @@ export default function ImageCarousel({
                 priority={index === 0}
               />
               <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(16,35,63,0.02)_0%,rgba(16,35,63,0.32)_54%,rgba(16,35,63,0.64)_100%)]" />
-              <div className="absolute inset-x-0 bottom-0 p-6 sm:p-7">
+              <div className="absolute inset-x-0 bottom-0 hidden p-6 sm:block sm:p-7">
                 <div className="max-w-lg rounded-[1.5rem] border border-white/14 bg-[linear-gradient(135deg,rgba(21,46,76,0.58),rgba(91,147,142,0.36))] p-4 backdrop-blur-md sm:p-5">
                   <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-accent-soft)]">
                     {slide.title}
@@ -128,8 +128,19 @@ export default function ImageCarousel({
         })}
       </div>
 
+      <div className="border-t border-[color:var(--color-border)] bg-[rgba(255,250,242,0.88)] px-5 py-5 sm:hidden">
+        <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-sage-deep)]">
+          {slides[activeIndex]?.title}
+        </p>
+        {slides[activeIndex]?.caption ? (
+          <p className="mt-3 text-sm leading-7 text-[var(--color-muted)]">
+            {slides[activeIndex].caption}
+          </p>
+        ) : null}
+      </div>
+
       <div className="absolute inset-x-0 top-0 flex items-center justify-between p-4">
-        <div className="rounded-full bg-[rgba(16,35,63,0.68)] px-3 py-1.5 text-[11px] font-medium uppercase tracking-[0.2em] text-white/80">
+        <div className="hidden rounded-full bg-[rgba(16,35,63,0.68)] px-3 py-1.5 text-[11px] font-medium uppercase tracking-[0.2em] text-white/80 sm:block">
           {eyebrow}
         </div>
         <div className="flex gap-2">

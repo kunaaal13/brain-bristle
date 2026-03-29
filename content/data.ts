@@ -69,8 +69,8 @@ export const contentData = {
       closing:
         'With effective intervention with our masses, we believe we can shift millions of autism life trajectories.',
       visual: {
-        image: '/photos/problem-classroom.jpg',
-        alt: 'Children seated together in a classroom with a Brain Bristle educator supporting from the floor',
+        image: '/photos/bb-children-circle.jpg',
+        alt: 'Children seated together in a classroom while a Brain Bristle educator sits with them from behind',
         title:
           'Millions of Children on the Autism Spectrum Remain Unsupported.',
       },
@@ -93,29 +93,29 @@ export const contentData = {
           title: 'Recruiting Social Work Fellows',
           description:
             'Brain Bristle recruits Social Work Fellows (students studying MA Couns.,Psychol., Psychiatry, B.Ed or on a gap year) to work with students on the autism spectrum & learning needs for a minimum of 1 academic year for a Social Work- FieldWork position.',
-          image: '/photos/school-group-celebration.jpg',
-          alt: 'Children and Brain Bristle team members together inside a school corridor',
+          image: '/photos/bb-team-ground-planning.jpg',
+          alt: 'Two Brain Bristle team members sitting outdoors with notes and printed materials during a planning session',
         },
         {
           title: 'Ongoing Training & Supervision',
           description:
             'Social Work Fellows are trained round the year in autism, teaching and leadership pedagogy. We also partner with other organizations for their training like The Circle India U, ASB and more.',
-          image: '/photos/team-planning.jpg',
-          alt: 'Two Brain Bristle team members reviewing notes together during a planning session outdoors',
+          image: '/photos/workshop-reading.jpg',
+          alt: 'A Brain Bristle workshop or reading session with multiple people gathered together',
         },
         {
           title: 'Academic Intervention',
           description:
             'Social Work Fellows work with an Individualized Education Plan (IEP) and Student Accommodation Plans (SAP) for student achievement goals for their school caseload.',
-          image: '/photos/outdoor-learning.jpg',
-          alt: 'Brain Bristle facilitators and children working together over learning sheets during an outdoor activity',
+          image: '/photos/bb-outdoor-learning-new.jpg',
+          alt: 'Brain Bristle facilitators and children working together over learning sheets on a striped mat outdoors',
         },
         {
           title: 'Advocacy & Awareness',
           description:
             'We bring advocacy & awareness to life through ongoing research work and daily engagement with multiple stakeholders and organizations creating visibility, dialogue and planting seeds of inclusion.',
-          image: '/photos/public-conversation.jpg',
-          alt: 'A large audience gathered for a Brain Bristle public event and conversation',
+          image: '/photos/bb-audience-hall.jpg',
+          alt: 'A large audience gathered in a hall for a Brain Bristle public event and conversation',
         },
       ],
     },
@@ -142,8 +142,8 @@ export const contentData = {
         },
       ],
       visual: {
-        image: '/photos/school-group-celebration.jpg',
-        alt: 'Children and school staff gathered together during a Brain Bristle school visit',
+        image: '/photos/bb-student-support-selfie.jpg',
+        alt: 'A Brain Bristle facilitator smiling with two students in a classroom',
         title: 'Inclusion, support, and educational access must move together',
       },
     },
@@ -198,7 +198,7 @@ export const contentData = {
         "Join the mailing list for updates on field work, advocacy, research notes, and Brain Bristle's public voice around autism and inclusion.",
     },
     donateReference: {
-      label: 'Reference Picture for a Donation Form',
+      label: 'Support the Mission',
       headline: 'Support the work through the Donate tab.',
       description:
         'The donation tab links directly to Milaap, where supporters can contribute to the work.',
@@ -270,15 +270,15 @@ export const contentData = {
         title: 'Direct Intervention',
         description:
           'One-to-one student support in classrooms remains the clearest proof point of what equitable inclusion can look like in practice.',
-        image: '/photos/outdoor-learning.jpg',
-        alt: 'Facilitators and children engaging in guided learning together outdoors',
+        image: '/photos/problem-classroom.jpg',
+        alt: 'A Brain Bristle educator seated with children inside a classroom',
       },
       {
         title: 'Implementation',
         description:
           'The work is sustained through on-ground supervision, classroom adaptation, school partnership, and systems that keep practice consistent.',
-        image: '/photos/team-planning.jpg',
-        alt: 'Team members reviewing notes and planning together during a school-day session',
+        image: '/photos/classroom-note-taking.jpg',
+        alt: 'A Brain Bristle team member writing notes in a classroom while students work in the background',
       },
       {
         title: 'Sharing learnings and blueprints',
@@ -290,22 +290,15 @@ export const contentData = {
     ],
     fellowGallery: [
       {
-        image: '/photos/problem-classroom.jpg',
-        alt: 'A Brain Bristle educator seated with children inside a classroom',
-        title: 'School-based intervention',
-        caption:
-          'The work is rooted in classrooms where students are already learning and where support can quietly shift daily participation.',
-      },
-      {
-        image: '/photos/outdoor-learning.jpg',
-        alt: 'Children and facilitators working together over learning materials outdoors',
+        image: '/photos/bb-school-honour-board.jpg',
+        alt: 'Children and facilitators celebrating together in a school beneath an honours board',
         title: 'Implementation across sites',
         caption:
           'Implementation depends on routine, coordination, and enough field presence to adapt support to each school context.',
       },
       {
-        image: '/photos/public-conversation.jpg',
-        alt: 'A crowded Brain Bristle event with speakers in front of a seated audience',
+        image: '/photos/bb-gallery-reading.jpg',
+        alt: 'A Brain Bristle group reading or presenting together in a gallery-like space',
         title: 'Learning carried outward',
         caption:
           'What is learned on the ground has to travel outward through public conversations, writing, and shared language.',
@@ -476,32 +469,32 @@ export const contentData = {
           role: 'Social Work Fellow',
           description:
             'Placeholder slot for a future fellow profile, name, and image from the 2026-27 cohort.',
-          image: '/photos/problem-classroom.jpg',
-          alt: 'Children seated in a classroom with a Brain Bristle educator supporting nearby',
+          image: '/placeholders/team-grid-1.svg',
+          alt: 'Placeholder visual for a future Social Work Fellow profile',
         },
         {
           name: 'Fellow profile 02',
           role: 'Social Work Fellow',
           description:
             'Placeholder slot for a future fellow profile, name, and image from the 2026-27 cohort.',
-          image: '/photos/outdoor-learning.jpg',
-          alt: 'Children and facilitators seated together around learning sheets during a guided activity',
+          image: '/placeholders/team-grid-2.svg',
+          alt: 'Placeholder visual for a future Social Work Fellow profile',
         },
         {
           name: 'Fellow profile 03',
           role: 'Social Work Fellow',
           description:
             'Placeholder slot for a future fellow profile, name, and image from the 2026-27 cohort.',
-          image: '/photos/classroom-note-taking.jpg',
-          alt: 'A Brain Bristle team member writing notes in a classroom while students work in the background',
+          image: '/placeholders/team-grid-3.svg',
+          alt: 'Placeholder visual for a future Social Work Fellow profile',
         },
         {
           name: 'Fellow profile 04',
           role: 'Social Work Fellow',
           description:
             'Placeholder slot for a future fellow profile, name, and image from the 2026-27 cohort.',
-          image: '/photos/team-planning.jpg',
-          alt: 'Two Brain Bristle team members sitting outdoors with notes spread beside them',
+          image: '/placeholders/team-portrait-a.svg',
+          alt: 'Placeholder visual for a future Social Work Fellow profile',
         },
       ],
     },
@@ -548,9 +541,9 @@ export const contentData = {
         {
           title: 'Social Work Fellow Applications 27-28',
           description:
-            'Apply to the Social Work Fellowship through the application form for the 27-28 cohort.',
-          href: 'https://forms.gle/brain-bristle-social-work-fellowship',
-          ctaLabel: 'Open application form',
+            'To apply for the Social Work Fellowship for the 27-28 cohort, email the team directly and they will guide you through the next step.',
+          href: 'mailto:hello@brainbristle.org?subject=Social%20Work%20Fellowship%20Application',
+          ctaLabel: 'Apply',
         },
       ],
     },
@@ -561,7 +554,7 @@ export const contentData = {
       description:
         'This CTA block is designed for a future external form link. Until then, Brain Bristle can route enquiries and early applications through email.',
       cta: {
-        label: 'Request the application form',
+        label: 'Mail us',
         href: 'mailto:hello@brainbristle.org?subject=Social%20Work%20Fellowship%20Application',
       },
     },
@@ -779,7 +772,7 @@ export const contentData = {
       'Your contribution can help make more low-income schools inclusive, academically and socially, for autistic and special-needs students while also helping Brain Bristle grow its voice and build research for the country.',
     cta: {
       label: 'Donate now',
-      href: 'https://milaap.org/fundraisers/brain-bristle',
+      href: 'https://milaap.org/fundraisers/support-autistic-students-in-inclusion-receive-a-better-education',
     },
     options: {
       label: 'Ways to Give',
@@ -791,7 +784,7 @@ export const contentData = {
         amounts: ['$3 / month', '$5 / month', '$7 / month', '$10 / month', '$25 / month'],
         cta: {
           label: 'Start now',
-          href: 'https://milaap.org/fundraisers/brain-bristle?frequency=monthly',
+          href: 'https://milaap.org/fundraisers/support-autistic-students-in-inclusion-receive-a-better-education',
         },
       },
       oneTime: {
@@ -800,7 +793,7 @@ export const contentData = {
           'You can also become a spontaneous supporter with a one-time donation in any amount.',
         cta: {
           label: 'Give now',
-          href: 'https://milaap.org/fundraisers/brain-bristle?frequency=once',
+          href: 'https://milaap.org/fundraisers/support-autistic-students-in-inclusion-receive-a-better-education',
         },
       },
     },

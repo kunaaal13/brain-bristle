@@ -255,7 +255,7 @@ export default function Home() {
             <ScrollReveal delay={0.08}>
               <ImageCarousel
                 slides={home.gallery}
-                aspectClassName='aspect-[16/11] lg:aspect-[16/9]'
+                aspectClassName='aspect-[4/5] sm:aspect-[16/11] lg:aspect-[16/9]'
                 sizes='100vw'
                 eyebrow='Home gallery'
               />

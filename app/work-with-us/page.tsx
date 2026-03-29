@@ -27,7 +27,7 @@ export default function WorkWithUsPage() {
         layout="centered"
         tone="editorial"
         actions={[
-          { label: "Request the application form", href: workWithUs.application.cta.href },
+          { label: workWithUs.application.cta.label, href: workWithUs.application.cta.href },
           { label: "Donate", href: "/donate", variant: "secondary" },
         ]}
       />
@@ -42,27 +42,6 @@ export default function WorkWithUsPage() {
               align="center"
             />
           </ScrollReveal>
-
-          <div className="mt-12 grid gap-5 md:grid-cols-2">
-            {workWithUs.team.photos.map((photo, index) => (
-              <ScrollReveal key={photo.image} delay={index * 0.08}>
-                <div className="panel-light flex h-full flex-col overflow-hidden rounded-[2rem]">
-                  <div className="relative h-[15rem] sm:h-[17rem] lg:h-[18.5rem]">
-                    <Image
-                      src={photo.image}
-                      alt={photo.alt}
-                      fill
-                      sizes="(max-width: 1024px) 100vw, 48vw"
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="px-5 py-4 text-sm font-medium text-[var(--color-muted)]">
-                    {photo.label}
-                  </div>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
 
           <ScrollReveal delay={0.08}>
             <article className="panel-light mt-12 overflow-hidden rounded-[2.4rem]">

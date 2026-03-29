@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import EventCard from "../../components/EventCard";
 import FilmCard from "../../components/FilmCard";
-import ImageStrip from "../../components/ImageStrip";
 import PageHero from "../../components/PageHero";
 import PressCard from "../../components/PressCard";
 import ScrollReveal from "../../components/ScrollReveal";
@@ -30,22 +29,6 @@ export default function MediaPage() {
           { label: "Jump to press", href: "#press", variant: "secondary" },
         ]}
       />
-
-      <section className="section-turquoise border-b border-[color:var(--color-border)]">
-        <div className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12">
-          <ScrollReveal>
-            <SectionIntro
-              label="Media gallery"
-              title="A visual rhythm for documentary work, conversations, and public voice."
-              description="These images connect the public-facing work to the school spaces, gatherings, and conversations that shape Brain Bristle's voice."
-              align="center"
-            />
-          </ScrollReveal>
-          <div className="mt-12">
-            <ImageStrip items={media.gallery} />
-          </div>
-        </div>
-      </section>
 
       <section id="films" className="section-editorial border-b border-[color:var(--color-border)] scroll-mt-28">
         <div className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12">

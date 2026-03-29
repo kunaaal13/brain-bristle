@@ -61,6 +61,8 @@ export default function DonatePage() {
 
                   <a
                     href={donate.options.monthly.cta.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="mt-10 inline-flex w-fit items-center rounded-full bg-[var(--color-accent)] px-7 py-3.5 text-sm font-semibold uppercase tracking-[0.16em] text-[var(--color-ink)] transition hover:bg-[var(--color-accent-soft)]"
                   >
                     {donate.options.monthly.cta.label}
@@ -81,6 +83,8 @@ export default function DonatePage() {
 
                   <a
                     href={donate.options.oneTime.cta.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="mt-10 inline-flex w-fit items-center rounded-full bg-[var(--color-accent)] px-7 py-3.5 text-sm font-semibold uppercase tracking-[0.16em] text-[var(--color-ink)] transition hover:bg-[var(--color-accent-soft)]"
                   >
                     {donate.options.oneTime.cta.label}
