@@ -67,9 +67,12 @@ export default function ProfileCarousel({
         ref={scrollRef}
         className="flex snap-x gap-5 overflow-x-auto pb-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
       >
-        {items.map((item) => (
-          <article
-            key={`${item.name}-${item.role}`}
+        {items.map((item, index) => {
+          const hasMeta = Boolean(item.name || item.role || item.description);
+
+          return (
+            <article
+            key={`${item.image}-${index}`}
             className={`min-w-[82%] snap-start overflow-hidden rounded-[2rem] md:min-w-[47%] xl:min-w-[31%] ${
               dark ? "panel-dark" : "panel-light"
             }`}
@@ -83,23 +86,28 @@ export default function ProfileCarousel({
                 className="object-cover"
               />
             </div>
-            <div className="px-6 py-6">
-              {item.role ? (
-                <p className={`text-xs font-semibold uppercase tracking-[0.24em] ${dark ? "text-[var(--color-accent-soft)]" : "text-[var(--color-sage-deep)]"}`}>
-                  {item.role}
-                </p>
-              ) : null}
-              <h3 className={`${item.role ? "mt-3" : ""} text-2xl font-semibold tracking-[-0.04em] ${dark ? "text-[var(--color-off-white)]" : "text-[var(--color-ink)]"}`}>
-                {item.name}
-              </h3>
-              {item.description ? (
-                <p className={`mt-4 text-sm leading-7 ${dark ? "text-white/76" : "text-[var(--color-muted)]"}`}>
-                  {item.description}
-                </p>
-              ) : null}
-            </div>
+            {hasMeta ? (
+              <div className="px-6 py-6">
+                {item.role ? (
+                  <p className={`text-xs font-semibold uppercase tracking-[0.24em] ${dark ? "text-[var(--color-accent-soft)]" : "text-[var(--color-sage-deep)]"}`}>
+                    {item.role}
+                  </p>
+                ) : null}
+                {item.name ? (
+                  <h3 className={`${item.role ? "mt-3" : ""} text-2xl font-semibold tracking-[-0.04em] ${dark ? "text-[var(--color-off-white)]" : "text-[var(--color-ink)]"}`}>
+                    {item.name}
+                  </h3>
+                ) : null}
+                {item.description ? (
+                  <p className={`mt-4 text-sm leading-7 ${dark ? "text-white/76" : "text-[var(--color-muted)]"}`}>
+                    {item.description}
+                  </p>
+                ) : null}
+              </div>
+            ) : null}
           </article>
-        ))}
+          );
+        })}
       </div>
     </div>
   );
